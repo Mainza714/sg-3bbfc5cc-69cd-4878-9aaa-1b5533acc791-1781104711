@@ -1,3 +1,4 @@
+
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
@@ -59,65 +60,65 @@ export function VideoShowcase() {
   };
 
   return (
-    <section className="min-h-screen bg-black text-white flex items-center">
-      <div className="container mx-auto px-4 md:px-6 pt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="relative aspect-video bg-black">
+    <section className="relative min-h-screen bg-black text-white">
+      {/* Video Background Layer */}
+      <div className="absolute inset-0 z-0">
+        {videos.map((video) => (
+          <div 
+            key={video.id}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              activeVideo === video.id ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+          >
+            <iframe
+              ref={(el) => {
+                videoRefs.current[video.id] = el;
+              }}
+              src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=${
+                activeVideo === video.id && isPlaying ? "1" : "0"
+              }&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${video.youtubeId}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
+          </div>
+        ))}
+        
+        {!activeVideo && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <p className="text-gray-500 text-lg">Hover over a title to play</p>
+          </div>
+        )}
+      </div>
+      
+      {/* Content Layer (on top of videos) */}
+      <div className="relative z-10 container mx-auto px-4 md:px-6 h-screen flex items-center">
+        <div className="w-full md:w-1/2 lg:w-2/5">
+          <ul className="space-y-12 py-12">
             {videos.map((video) => (
-              <div 
+              <li 
                 key={video.id}
-                className={`absolute inset-0 transition-opacity duration-500 ${
-                  activeVideo === video.id ? "opacity-100" : "opacity-0 pointer-events-none"
-                }`}
+                className="group"
+                onMouseEnter={() => handleMouseEnter(video.id)}
+                onMouseLeave={handleMouseLeave}
               >
-                <iframe
-                  ref={(el) => {
-                    videoRefs.current[video.id] = el;
-                  }}
-                  src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=${
-                    activeVideo === video.id && isPlaying ? "1" : "0"
-                  }&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${video.youtubeId}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                ></iframe>
-              </div>
+                <Link href={`/work/${video.id}`}>
+                  <div className="cursor-pointer">
+                    <h3 className={`text-3xl md:text-4xl font-bold tracking-tight transition-colors duration-300 ${
+                      activeVideo === video.id ? "text-white" : "text-gray-500"
+                    } group-hover:text-white`}>
+                      {video.title}
+                    </h3>
+                    <p className={`mt-2 transition-colors duration-300 ${
+                      activeVideo === video.id ? "text-gray-300" : "text-gray-600"
+                    } group-hover:text-gray-300`}>
+                      {video.description}
+                    </p>
+                  </div>
+                </Link>
+              </li>
             ))}
-            
-            {!activeVideo && (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-gray-500 text-lg">Hover over a title to play</p>
-              </div>
-            )}
-          </div>
-          
-          <div className="flex flex-col justify-center">
-            <ul className="space-y-12">
-              {videos.map((video) => (
-                <li 
-                  key={video.id}
-                  className="group"
-                  onMouseEnter={() => handleMouseEnter(video.id)}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <Link href={`/work/${video.id}`}>
-                    <div className="cursor-pointer">
-                      <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300 ${
-                        activeVideo === video.id ? "text-white" : "text-gray-500"
-                      } group-hover:text-white`}>
-                        {video.title}
-                      </h3>
-                      <p className={`mt-2 transition-colors duration-300 ${
-                        activeVideo === video.id ? "text-gray-300" : "text-gray-600"
-                      } group-hover:text-gray-300`}>
-                        {video.description}
-                      </p>
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          </ul>
         </div>
       </div>
     </section>
