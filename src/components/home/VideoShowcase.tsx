@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
@@ -17,7 +16,7 @@ export function VideoShowcase() {
   const videos: Video[] = [
     {
       id: "video-1",
-      title: "ECHOES OF TOMORROW",
+      title: "MAKOFI", // Updated title
       description: "A journey through time and memory",
       youtubeId: "By4Gxr3_U6s"
     },
@@ -71,7 +70,9 @@ export function VideoShowcase() {
                 }`}
               >
                 <iframe
-                  ref={(el) => (videoRefs.current[video.id] = el)}
+                  ref={(el) => { // Fix: Ref callback should return void or cleanup function
+                    videoRefs.current[video.id] = el;
+                  }}
                   src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=${
                     activeVideo === video.id && isPlaying ? "1" : "0"
                   }&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${video.youtubeId}`}
