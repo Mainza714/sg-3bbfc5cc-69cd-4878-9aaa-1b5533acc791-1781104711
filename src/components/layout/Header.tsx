@@ -66,8 +66,8 @@ function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () 
     { href: "/about", label: "ABOUT" },
     { href: "/work", label: "WORK" },
     { href: "/services/television-production", label: "SERVICES" },
+    { href: "/team", label: "TEAM" },
     { href: "/gallery", label: "GALLERY" },
-    { href: "/films", label: "FILMS" },
     { href: "/contact", label: "CONTACT" }
   ];
   

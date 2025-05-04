@@ -7,6 +7,7 @@ import { LatestNews } from "@/components/home/LatestNews";
 import { VideoShowcase } from "@/components/home/VideoShowcase";
 import { Services } from "@/components/home/Services";
 import { PhotoGallery } from "@/components/home/PhotoGallery";
+import { Team } from "@/components/home/Team";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Services />
         <PhotoGallery />
         <FeaturedWork />
+        <Team />
         <About />
         <LatestNews />
       </Layout>
