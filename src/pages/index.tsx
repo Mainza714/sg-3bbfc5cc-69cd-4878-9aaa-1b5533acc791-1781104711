@@ -5,6 +5,7 @@ import { FeaturedWork } from "@/components/home/FeaturedWork";
 import { About } from "@/components/home/About";
 import { LatestNews } from "@/components/home/LatestNews";
 import { VideoShowcase } from "@/components/home/VideoShowcase";
+import { Services } from "@/components/home/Services";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       
       <Layout>
         <VideoShowcase />
+        <Services />
         <FeaturedWork />
         <About />
         <LatestNews />

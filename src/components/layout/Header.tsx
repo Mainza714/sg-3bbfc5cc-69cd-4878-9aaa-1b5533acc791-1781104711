@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -66,6 +65,7 @@ function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () 
   const links = [
     { href: "/about", label: "ABOUT" },
     { href: "/work", label: "WORK" },
+    { href: "/services/television-production", label: "SERVICES" },
     { href: "/films", label: "FILMS" },
     { href: "/contact", label: "CONTACT" }
   ];
