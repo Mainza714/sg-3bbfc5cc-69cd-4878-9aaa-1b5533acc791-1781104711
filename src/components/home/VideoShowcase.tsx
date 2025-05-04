@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
@@ -109,11 +108,6 @@ export function VideoShowcase() {
                     } group-hover:text-white`}>
                       {video.title}
                     </h3>
-                    <p className={`mt-2 transition-colors duration-300 ${
-                      activeVideo === video.id ? "text-gray-300" : "text-gray-600"
-                    } group-hover:text-gray-300`}>
-                      {video.description}
-                    </p>
                   </div>
                 </Link>
               </li>
