@@ -16,13 +16,13 @@ export function VideoShowcase() {
   const videos: Video[] = [
     {
       id: "video-1",
-      title: "MAKOFI", // Updated title
+      title: "MAKOFI",
       description: "A journey through time and memory",
       youtubeId: "By4Gxr3_U6s"
     },
     {
       id: "video-2",
-      title: "SILENT CURRENTS",
+      title: "CAN YOU SEE US",
       description: "Exploring the depths of human connection",
       youtubeId: "0FOCFfDR-qA"
     }
