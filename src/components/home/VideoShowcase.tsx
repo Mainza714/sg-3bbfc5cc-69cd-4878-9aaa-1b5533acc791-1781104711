@@ -25,6 +25,12 @@ export function VideoShowcase() {
       title: "CAN YOU SEE US",
       description: "Exploring the depths of human connection",
       youtubeId: "0FOCFfDR-qA"
+    },
+    {
+      id: "video-3",
+      title: "TURN OF FORTUNE",
+      description: "When destiny takes an unexpected path",
+      youtubeId: "27jNnFeCrSQ"
     }
   ];
 
@@ -53,13 +59,8 @@ export function VideoShowcase() {
   };
 
   return (
-    <section className="py-24 bg-black text-white">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">FEATURED VIDEOS</h2>
-          <div className="h-px w-16 bg-white mt-4"></div>
-        </div>
-        
+    <section className="min-h-screen bg-black text-white flex items-center">
+      <div className="container mx-auto px-4 md:px-6 pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="relative aspect-video bg-black">
             {videos.map((video) => (
@@ -70,7 +71,7 @@ export function VideoShowcase() {
                 }`}
               >
                 <iframe
-                  ref={(el) => { // Fix: Ref callback should return void or cleanup function
+                  ref={(el) => {
                     videoRefs.current[video.id] = el;
                   }}
                   src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=${

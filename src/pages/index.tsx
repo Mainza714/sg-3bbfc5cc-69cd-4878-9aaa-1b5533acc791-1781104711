@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
       
       <Layout>
-        <Hero />
         <VideoShowcase />
         <FeaturedWork />
         <About />
