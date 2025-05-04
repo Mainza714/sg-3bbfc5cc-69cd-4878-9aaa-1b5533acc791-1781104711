@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +5,7 @@ export function FeaturedWork() {
   const projects = [
     {
       id: "project-1",
-      title: "ECHOES OF TOMORROW",
+      title: "MAKOFI",
       category: "Feature Film",
       image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       year: "2023"

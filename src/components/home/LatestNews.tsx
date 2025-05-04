@@ -1,22 +1,21 @@
-
 import Link from "next/link";
 import Image from "next/image";
 
 export function LatestNews() {
   const news = [
     {
-      id: "news-1",
-      title: "CENTRIPETAL ANNOUNCES NEW FILM SLATE FOR 2024",
-      date: "April 15, 2023",
-      excerpt: "Centripetal Media unveils an ambitious lineup of projects set to begin production in early 2024.",
-      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      id: 'news-1',
+      title: 'CENTRIPETAL ANNOUNCES NEW FILM SLATE FOR 2024',
+      date: 'April 15, 2023',
+      excerpt: 'Centripetal Media unveils an ambitious lineup of projects set to begin production in early 2024.',
+      image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
-      id: "news-2",
-      title: "ECHOES OF TOMORROW SELECTED FOR INTERNATIONAL FILM FESTIVAL",
-      date: "March 22, 2023",
-      excerpt: "Our latest feature film has been officially selected to premiere at the prestigious International Film Festival.",
-      image: "https://images.unsplash.com/photo-1568111561564-08726a1563e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      id: 'news-2',
+      title: 'MAKOFI SELECTED FOR INTERNATIONAL FILM FESTIVAL',
+      date: 'March 22, 2023',
+      excerpt: 'Our latest feature film has been officially selected to premiere at the prestigious International Film Festival.',
+      image: 'https://images.unsplash.com/photo-1568111561564-08726a1563e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
   ];
 
