@@ -18,6 +18,13 @@ export function Team() {
       role: "Director",
       bio: "Leading Centripetal Media with vision and expertise in creating compelling visual narratives.",
       image: "/director-lawrence-thompson-mab5r1hd.png"
+    },
+    {
+      id: "amanda-rose",
+      name: "Amanda Rose",
+      role: "Interior Designer",
+      bio: "Creating stunning visual environments and spaces that enhance our production value.",
+      image: "/designer-amanda-rose-mab5uigp.jpg"
     }
   ];
 
@@ -32,9 +39,9 @@ export function Team() {
           </p>
         </div>
         
-        <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {teamMembers.map((member) => (
-            <div key={member.id} className="group max-w-md">
+            <div key={member.id} className="group max-w-md mx-auto">
               <Link href={`/team/${member.id}`}>
                 <div className="cursor-pointer space-y-4">
                   <div className="relative aspect-square overflow-hidden rounded-lg w-full">
