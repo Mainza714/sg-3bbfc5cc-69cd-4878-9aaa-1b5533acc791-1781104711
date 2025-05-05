@@ -35,9 +35,9 @@ export function Footer() {
           <div className="text-center">
             <h4 className="text-sm font-bold tracking-wider mb-6">CONTACT</h4>
             <ul className="space-y-3">
-              <li className="text-gray-400">info@centripetal.media</li>
-              <li className="text-gray-400">+1 (323) 555-0123</li>
-              <li className="text-gray-400">Los Angeles, CA</li>
+              <li className="text-gray-400">P.O. BOX 50648, LUSAKA, ZAMBIA</li>
+              <li className="text-gray-400">+260974171293 | +260960900134</li>
+              <li className="text-gray-400">Indeco Hall, Commercial Lane,<br/>Stand No A4, Show Grounds,<br/>Lusaka, Zambia</li>
             </ul>
           </div>
           
