@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -14,32 +13,11 @@ interface TeamMember {
 export function Team() {
   const teamMembers: TeamMember[] = [
     {
-      id: "john-doe",
-      name: "John Doe",
-      role: "Creative Director",
-      bio: "Award-winning filmmaker with over 15 years of experience directing documentaries and narrative features.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1600&auto=format&fit=crop"
-    },
-    {
-      id: "jane-smith",
-      name: "Jane Smith",
-      role: "Director of Photography",
-      bio: "Cinematographer specializing in natural light and documentary-style storytelling with a distinct visual signature.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1600&auto=format&fit=crop"
-    },
-    {
-      id: "michael-johnson",
-      name: "Michael Johnson",
-      role: "Executive Producer",
-      bio: "Former network executive with extensive experience in content development, financing, and distribution.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1600&auto=format&fit=crop"
-    },
-    {
-      id: "sarah-williams",
-      name: "Sarah Williams",
-      role: "Head of Post-Production",
-      bio: "Editor and post-production supervisor with expertise in crafting compelling narratives from complex material.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1600&auto=format&fit=crop"
+      id: "lawrence-thompson",
+      name: "Lawrence Thompson",
+      role: "Director",
+      bio: "Leading Centripetal Media with vision and expertise in creating compelling visual narratives.",
+      image: "/director-lawrence-thompson-mab5r1hd.png"
     }
   ];
 
@@ -54,12 +32,12 @@ export function Team() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex justify-center">
           {teamMembers.map((member) => (
-            <div key={member.id} className="group">
+            <div key={member.id} className="group max-w-md">
               <Link href={`/team/${member.id}`}>
                 <div className="cursor-pointer space-y-4">
-                  <div className="relative aspect-square overflow-hidden rounded-lg">
+                  <div className="relative aspect-square overflow-hidden rounded-lg w-full">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -68,14 +46,14 @@ export function Team() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80"></div>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-center">
                     <h3 className="text-xl font-bold tracking-tight group-hover:text-gray-300 transition-colors">
                       {member.name}
                     </h3>
                     <p className="text-gray-300 font-medium">
                       {member.role}
                     </p>
-                    <p className="text-gray-400 text-sm line-clamp-2">
+                    <p className="text-gray-400 text-sm">
                       {member.bio}
                     </p>
                   </div>
