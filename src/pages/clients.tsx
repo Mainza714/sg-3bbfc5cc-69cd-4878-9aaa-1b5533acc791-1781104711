@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import { Layout } from "@/components/layout/Layout";
@@ -15,7 +14,6 @@ export default function ClientsPage() {
     { name: "Abacus", src: "/logos/abacus-other.jpg", alt: "Abacus logo" },
     { name: "Al Jazeera", src: "/logos/aljazeera.png", alt: "Al Jazeera logo" },
     { name: "CEC", src: "/logos/cec-logo.jpg", alt: "CEC logo" },
-    { name: "Centripetal Media", src: "/logos/centri.PNG", alt: "Centripetal Media logo" },
     { name: "Cutting Edge PR", src: "/logos/cutting-edge-pr.jpg", alt: "Cutting Edge PR logo" },
     { name: "Garda World", src: "/logos/garda-world.jpg", alt: "Garda World logo" },
     { name: "Human Rights Watch", src: "/logos/hrw-logo.jpg", alt: "Human Rights Watch logo" },
