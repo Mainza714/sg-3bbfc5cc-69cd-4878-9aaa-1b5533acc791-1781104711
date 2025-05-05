@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Image from "next/image";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -17,52 +16,100 @@ export function PhotoGallery() {
   
   const photos: Photo[] = [
     {
-      id: "photo-1",
-      title: "Urban Landscape",
-      category: "Documentary",
-      src: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-1',
+      title: 'Studio Lighting Setup',
+      category: 'Behind the Scenes',
+      src: '/whatsapp-image-2022-10-24-at-15-54-56-thumb-mab7ujii.jpeg'
     },
     {
-      id: "photo-2",
-      title: "Portrait Study",
-      category: "Portrait",
-      src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-2',
+      title: 'Camera Equipment',
+      category: 'Production Gear',
+      src: '/whatsapp-image-2022-10-24-at-15-54-57-thumb-mab7uxep.jpeg'
     },
     {
-      id: "photo-3",
-      title: "Cultural Heritage",
-      category: "Documentary",
-      src: "https://images.unsplash.com/photo-1566438480900-0609be27a4be?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-3',
+      title: 'On Location Filming',
+      category: 'Production',
+      src: '/whatsapp-image-2022-10-24-at-15-54-58-thumb-mab7uz2u.jpeg'
     },
     {
-      id: "photo-4",
-      title: "Street Life",
-      category: "Street",
-      src: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-4',
+      title: 'Studio Session',
+      category: 'Production',
+      src: '/whatsapp-image-2022-10-24-at-15-54-59-thumb-mab7v0n5.jpeg'
     },
     {
-      id: "photo-5",
-      title: "Architectural Forms",
-      category: "Architecture",
-      src: "https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-5',
+      title: 'Production Setup',
+      category: 'Behind the Scenes',
+      src: '/whatsapp-image-2022-10-24-at-15-54-561-thumb-mab7v227.jpeg'
     },
     {
-      id: "photo-6",
-      title: "Natural Patterns",
-      category: "Nature",
-      src: "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-6',
+      title: 'Camera Equipment',
+      category: 'Production Gear',
+      src: '/whatsapp-image-2022-10-24-at-15-54-571-thumb-mab7v3d6.jpeg'
     },
     {
-      id: "photo-7",
-      title: "Urban Movement",
-      category: "Street",
-      src: "https://images.unsplash.com/photo-1506739901478-9d6e4d4c7913?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-7',
+      title: 'Field Production',
+      category: 'Documentary',
+      src: '/whatsapp-image-2022-10-24-at-15-54-581-thumb-mab7v4wp.jpeg'
     },
     {
-      id: "photo-8",
-      title: "Light Study",
-      category: "Abstract",
-      src: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1600&auto=format&fit=crop"
+      id: 'photo-8',
+      title: 'Studio Interview',
+      category: 'Production',
+      src: '/whatsapp-image-2022-10-24-at-15-55-04-thumb-mab7v76i.jpeg'
+    },
+    {
+      id: 'photo-9',
+      title: 'Camera Setup',
+      category: 'Production Gear',
+      src: '/whatsapp-image-2022-10-24-at-15-55-05-thumb-mab7v8ti.jpeg'
+    },
+    {
+      id: 'photo-10',
+      title: 'Production Monitor',
+      category: 'Equipment',
+      src: '/whatsapp-image-2022-10-24-at-15-55-06-thumb-mab7vaul.jpeg'
+    },
+    {
+      id: 'photo-11',
+      title: 'Location Shoot',
+      category: 'Documentary',
+      src: '/whatsapp-image-2022-10-24-at-15-56-35-thumb-mab7vcny.jpeg'
+    },
+    {
+      id: 'photo-12',
+      title: 'Field Recording',
+      category: 'Production',
+      src: '/whatsapp-image-2022-11-07-at-16-50-23-thumb-mab7ve6y.jpeg'
+    },
+    {
+      id: 'photo-13',
+      title: 'Production Team',
+      category: 'Behind the Scenes',
+      src: '/whatsapp-image-2022-11-07-at-16-50-24-thumb-mab7vgi2.jpeg'
+    },
+    {
+      id: 'photo-14',
+      title: 'Community Filming',
+      category: 'Documentary',
+      src: '/whatsapp-image-2022-11-07-at-16-50-25-thumb-mab7vivq.jpeg'
+    },
+    {
+      id: 'photo-15',
+      title: 'Rural Documentary',
+      category: 'Documentary',
+      src: '/whatsapp-image-2022-11-07-at-16-50-31-thumb-mab7vke1.jpeg'
+    },
+    {
+      id: 'photo-16',
+      title: 'Team Meeting',
+      category: 'Behind the Scenes',
+      src: '/whatsapp-image-2022-11-07-at-17-00-57-thumb-mab7vm0x.jpeg'
     }
   ];
 
@@ -84,11 +131,11 @@ export function PhotoGallery() {
   return (
     <section className="py-24 bg-black text-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Photography Portfolio</h2>
-          <p className="text-gray-400 max-w-3xl">
-            A selection of our professional photography work across various genres and styles.
-            Each image tells a unique story and captures a moment in time.
+        <div className='mb-12 md:mb-16'>
+          <h2 className='text-3xl md:text-4xl font-bold tracking-tight mb-4'>Our Work</h2>
+          <p className='text-gray-400 max-w-3xl'>
+            A glimpse into our production process and behind-the-scenes moments.
+            From studio sessions to field documentaries, we capture stories that matter.
           </p>
         </div>
         
