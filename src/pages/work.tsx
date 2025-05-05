@@ -6,51 +6,41 @@ import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 
 export default function Work() {
-  const categories = ["All", "Feature Films", "Documentaries", "Short Films", "Series"];
+  const categories = ["All", "Series", "Movies"];
   const [activeCategory, setActiveCategory] = useState("All");
   
   const projects = [
     {
-      id: "project-1",
-      title: "ECHOES OF TOMORROW",
-      category: "Feature Films",
-      image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2023"
+      id: "makofi-s1",
+      title: "MAKOFI Season 1",
+      category: "Series",
+      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      year: "2023",
+      network: "Zambezi Magic"
     },
     {
-      id: "project-2",
-      title: "SILENT CURRENTS",
-      category: "Documentaries",
-      image: "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2022"
+      id: "makofi-s2",
+      title: "MAKOFI Season 2",
+      category: "Series",
+      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      year: "2024",
+      network: "Zambezi Magic"
     },
     {
-      id: "project-3",
-      title: "FRACTURED LIGHT",
-      category: "Short Films",
-      image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2023"
-    },
-    {
-      id: "project-4",
-      title: "BENEATH THE SURFACE",
-      category: "Documentaries",
-      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2021"
-    },
-    {
-      id: "project-5",
-      title: "MIDNIGHT CHRONICLES",
+      id: "turn-of-fortune",
+      title: "Turn of Fortune Season 1",
       category: "Series",
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2022"
+      year: "2023",
+      network: "Zambezi Magic"
     },
     {
-      id: "project-6",
-      title: "THE LAST JOURNEY",
-      category: "Feature Films",
-      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2023"
+      id: "can-they-see-us",
+      title: "Mwabi: Can They See Us",
+      category: "Movies",
+      image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      year: "2024",
+      network: "Netflix"
     }
   ];
   
@@ -62,12 +52,11 @@ export default function Work() {
     <>
       <Head>
         <title>Our Work | Centripetal Media</title>
-        <meta name="description" content="Explore the portfolio of Centripetal Media, featuring our feature films, documentaries, short films, and series." />
+        <meta name="description" content="Explore the portfolio of Centripetal Media, featuring our original series and movies." />
       </Head>
       
       <Layout>
         <div className="pt-20">
-          {/* Hero Section */}
           <section className="relative h-[50vh] w-full overflow-hidden">
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
@@ -86,7 +75,6 @@ export default function Work() {
             </div>
           </section>
           
-          {/* Filter Section */}
           <section className="py-12 bg-white">
             <div className="container mx-auto px-4 md:px-6">
               <div className="flex flex-wrap justify-center gap-4 md:gap-8">
@@ -107,13 +95,12 @@ export default function Work() {
             </div>
           </section>
           
-          {/* Projects Grid */}
           <section className="py-12 bg-white">
             <div className="container mx-auto px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredProjects.map((project) => (
                   <Link key={project.id} href={`/work/${project.id}`} className="group">
-                    <div className="relative aspect-[3/4] overflow-hidden mb-4">
+                    <div className="relative aspect-[16/9] overflow-hidden mb-4">
                       <Image
                         src={project.image}
                         alt={project.title}
@@ -121,14 +108,15 @@ export default function Work() {
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h3 className="text-xl font-bold tracking-tight group-hover:text-gray-700 transition-colors">
-                          {project.title}
-                        </h3>
-                        <p className="text-gray-600 mt-1">{project.category}</p>
+                    <div className="flex flex-col gap-1">
+                      <h3 className="text-xl font-bold tracking-tight group-hover:text-gray-700 transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600">{project.network}</p>
+                      <div className="flex justify-between items-center mt-2">
+                        <p className="text-gray-600">{project.category}</p>
+                        <span className="text-gray-600">{project.year}</span>
                       </div>
-                      <span className="text-gray-600">{project.year}</span>
                     </div>
                   </Link>
                 ))}
