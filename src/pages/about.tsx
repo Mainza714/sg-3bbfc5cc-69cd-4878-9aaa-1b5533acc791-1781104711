@@ -18,8 +18,8 @@ export default function About() {
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
               <Image
-                src="https://images.unsplash.com/photo-1517940001917-1c73477c85a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-                alt="About Centripetal Media"
+                src="/e0a70f72bdae9885bfc32d7cd19a26a1-l-mab9d8uv.jpg"
+                alt="Centripetal Media Zambia"
                 fill
                 priority
                 className="object-cover"
@@ -65,41 +65,41 @@ export default function About() {
                 <div className="h-px w-16 bg-black mx-auto mt-4"></div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                {[
-                  {
-                    name: "ALEX REYNOLDS",
-                    role: "Founder & Creative Director",
-                    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                    bio: "With over 15 years of experience in filmmaking, Alex leads our creative vision with a passion for authentic storytelling."
-                  },
-                  {
-                    name: "JORDAN CHEN",
-                    role: "Head of Production",
-                    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                    bio: "Jordan oversees all production aspects, ensuring our projects maintain the highest standards of quality and artistic integrity."
-                  },
-                  {
-                    name: "TAYLOR MORGAN",
-                    role: "Director of Photography",
-                    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                    bio: "Taylor's distinctive visual style has shaped the look of our most acclaimed projects, bringing stories to life through powerful imagery."
-                  }
-                ].map((member, index) => (
-                  <div key={index} className="text-center">
-                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-6">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold tracking-tight mb-1">{member.name}</h3>
-                    <p className="text-gray-600 mb-4">{member.role}</p>
-                    <p className="text-gray-700">{member.bio}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="text-center">
+                  <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-6">
+                    <Image
+                      src="/lawrence-thompson.jpg"
+                      alt="Lawrence Thompson"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                ))}
+                  <h3 className="text-xl font-bold tracking-tight mb-1">LAWRENCE THOMPSON</h3>
+                  <p className="text-gray-600 mb-4">Founder & Creative Director</p>
+                  <p className="text-gray-700">
+                    A visionary filmmaker with extensive experience in directing and producing, 
+                    Lawrence leads Centripetal Media with a passion for storytelling and a 
+                    commitment to excellence in African cinema.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-6">
+                    <Image
+                      src="/amanda-rose.jpg"
+                      alt="Amanda Rose"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold tracking-tight mb-1">AMANDA ROSE</h3>
+                  <p className="text-gray-600 mb-4">Interior Designer</p>
+                  <p className="text-gray-700">
+                    With her keen eye for detail and creative vision, Amanda brings spaces to life 
+                    through innovative design solutions that perfectly balance aesthetics and functionality.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
