@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Video {
   id: string;
@@ -11,6 +12,7 @@ interface Video {
 export function VideoShowcase() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [defaultImageLoaded, setDefaultImageLoaded] = useState(false);
   const videoRefs = useRef<{ [key: string]: HTMLIFrameElement | null }>({});
   
   const videos: Video[] = [
@@ -41,6 +43,9 @@ export function VideoShowcase() {
     const firstScriptTag = document.getElementsByTagName("script")[0];
     firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
 
+    // Set default video thumbnails
+    setDefaultImageLoaded(true);
+
     return () => {
       // Clean up
       setActiveVideo(null);
@@ -62,6 +67,31 @@ export function VideoShowcase() {
     <section className="relative min-h-screen bg-black text-white">
       {/* Video Background Layer */}
       <div className="absolute inset-0 z-0">
+        {/* Default Video Thumbnails Grid */}
+        {!activeVideo && (
+          <div className="absolute inset-0 bg-black">
+            <div className="grid grid-cols-1 md:grid-cols-3 h-full">
+              {videos.map((video) => (
+                <div key={video.id} className="relative h-full overflow-hidden">
+                  <div className="absolute inset-0 bg-black/50 z-10"></div>
+                  <img 
+                    src={`https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`}
+                    alt={video.title}
+                    className="object-cover h-full w-full opacity-70"
+                  />
+                  <div className="absolute bottom-0 left-0 p-4 z-20">
+                    <h4 className="text-xl font-bold">{video.title}</h4>
+                    <p className="text-sm text-gray-300">{video.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="text-white text-lg bg-black/70 px-6 py-3 rounded-full">Hover over a title to play</p>
+            </div>
+          </div>
+        )}
+
         {videos.map((video) => (
           <div 
             key={video.id}
@@ -82,12 +112,6 @@ export function VideoShowcase() {
             ></iframe>
           </div>
         ))}
-        
-        {!activeVideo && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <p className="text-gray-500 text-lg">Hover over a title to play</p>
-          </div>
-        )}
       </div>
       
       {/* Content Layer (on top of videos) */}
