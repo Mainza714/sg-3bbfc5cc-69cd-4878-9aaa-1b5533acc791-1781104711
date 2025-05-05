@@ -131,24 +131,25 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-bold mb-2">Office</h3>
                       <p className="text-gray-700">
-                        123 Creative Avenue<br />
-                        Los Angeles, CA 90210<br />
-                        United States
+                        Indeco Hall, Commercial Lane<br />
+                        Stand No A4, Show Grounds<br />
+                        Lusaka, Zambia
                       </p>
                     </div>
                     
                     <div>
-                      <h3 className="text-lg font-bold mb-2">Email</h3>
+                      <h3 className="text-lg font-bold mb-2">Mailing Address</h3>
                       <p className="text-gray-700">
-                        info@centripetal.media<br />
-                        press@centripetal.media
+                        P.O. BOX 50648<br />
+                        LUSAKA, ZAMBIA
                       </p>
                     </div>
                     
                     <div>
                       <h3 className="text-lg font-bold mb-2">Phone</h3>
                       <p className="text-gray-700">
-                        +1 (323) 555-0123
+                        +260974171293<br />
+                        +260960900134
                       </p>
                     </div>
                     
