@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -13,28 +12,28 @@ interface Service {
 export function Services() {
   const services: Service[] = [
     {
-      id: "television-production",
-      title: "Television Production",
-      description: "Full-service production from concept to delivery. We specialize in documentaries, branded content, and narrative storytelling that captivates audiences.",
-      image: "https://images.unsplash.com/photo-1540655037529-dec987208707?q=80&w=1600&auto=format&fit=crop"
+      id: 'television-production',
+      title: 'Television Production',
+      description: 'Full-service production from concept to delivery. We specialize in documentaries, branded content, and narrative storytelling that captivates audiences.',
+      image: '/img-20230119-wa0029-mab837x5.jpg'
     },
     {
-      id: "photography",
-      title: "Photography",
-      description: "Professional photography services capturing authentic moments with artistic vision. From editorial to commercial, we deliver striking visuals that tell your story.",
-      image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1600&auto=format&fit=crop"
+      id: 'photography',
+      title: 'Photography',
+      description: 'Professional photography services capturing authentic moments with artistic vision. From editorial to commercial, we deliver striking visuals that tell your story.',
+      image: '/img-20230119-wa0038-mab83amh.jpg'
     },
     {
-      id: "international-fixing",
-      title: "International Fixing",
-      description: "End-to-end production support for international projects. We handle logistics, permits, local crew hiring, and cultural navigation to ensure smooth production anywhere in the world.",
-      image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1600&auto=format&fit=crop"
+      id: 'international-fixing',
+      title: 'International Fixing',
+      description: 'End-to-end production support for international projects. We handle logistics, permits, local crew hiring, and cultural navigation to ensure smooth production anywhere in the world.',
+      image: '/whatsapp-image-2022-10-24-at-15-56-35-mab83cb2.jpeg'
     },
     {
-      id: "masterclass-facilitation",
-      title: "Masterclass Facilitation",
-      description: "Expert-led workshops and training sessions for filmmakers and content creators. Learn industry best practices and cutting-edge techniques from seasoned professionals.",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&auto=format&fit=crop"
+      id: 'masterclass-facilitation',
+      title: 'Masterclass Facilitation',
+      description: 'Expert-led workshops and training sessions for filmmakers and content creators. Learn industry best practices and cutting-edge techniques from seasoned professionals.',
+      image: '/whatsapp-image-2023-01-19-at-16-13-22-mab83ije.jpeg'
     }
   ];
 
