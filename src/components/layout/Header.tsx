@@ -70,12 +70,13 @@ export function Header() {
 
 function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () => void }) {
   const links = [
-    { href: "/about", label: "ABOUT" },
-    { href: "/work", label: "WORK" },
-    { href: "/services/television-production", label: "SERVICES" },
-    { href: "/team", label: "TEAM" },
-    { href: "/gallery", label: "GALLERY" },
-    { href: "/contact", label: "CONTACT" }
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/work", label: "Work" },
+    { href: "/services", label: "Services" },
+    { href: "/team", label: "Team" },
+    { href: "/clients", label: "Clients" },
+    { href: "/contact", label: "Contact" }
   ];
   
   return (
