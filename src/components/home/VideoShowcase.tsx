@@ -79,10 +79,7 @@ export function VideoShowcase() {
                     alt={video.title}
                     className="object-cover h-full w-full opacity-70"
                   />
-                  <div className="absolute bottom-0 left-0 p-4 z-20">
-                    <h4 className="text-xl font-bold">{video.title}</h4>
-                    <p className="text-sm text-gray-300">{video.description}</p>
-                  </div>
+                  {/* Removed title and description here */}
                 </div>
               ))}
             </div>
