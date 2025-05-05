@@ -17,28 +17,35 @@ export function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-black/90 backdrop-blur-sm" : "bg-transparent"}`}>
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex items-center justify-between h-20">
-            <Link href="/" className="relative h-16 w-16 md:h-20 md:w-20">
-              <Image 
-                src="/c-ma9y38y6.png" 
-                alt="Centripetal Media" 
-                fill
-                className="object-contain"
-              />
-            </Link>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-sm' : 'bg-transparent'}`}>
+        <div className='container mx-auto px-4 md:px-6'>
+          <div className='flex items-center justify-between h-20'>
+            {/* Add an empty div with the same width as the menu button to balance the layout */}
+            <div className='w-6 md:w-8'></div>
             
+            {/* Center the logo */}
+            <div className='absolute left-1/2 transform -translate-x-1/2'>
+              <Link href='/' className='relative h-16 w-16 md:h-20 md:w-20 block'>
+                <Image 
+                  src='/c-ma9y38y6.png' 
+                  alt='Centripetal Media' 
+                  fill
+                  className='object-contain'
+                />
+              </Link>
+            </div>
+            
+            {/* Keep the menu button on the right */}
             <button 
-              className="text-white z-50"
+              className='text-white z-50'
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label='Toggle menu'
             >
-              <span className="sr-only">Toggle menu</span>
-              <div className="flex flex-col items-end space-y-1.5">
-                <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-                <span className={`block w-4 h-0.5 bg-white transition-opacity duration-300 ${isMenuOpen ? "opacity-0" : ""}`}></span>
-                <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+              <span className='sr-only'>Toggle menu</span>
+              <div className='flex flex-col items-end space-y-1.5'>
+                <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                <span className={`block w-4 h-0.5 bg-white transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
               </div>
             </button>
           </div>
