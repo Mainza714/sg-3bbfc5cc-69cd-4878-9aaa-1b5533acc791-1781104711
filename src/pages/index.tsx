@@ -1,7 +1,8 @@
+
 import Head from "next/head";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/home/Hero";
-import { FeaturedWork } from "@/components/home/FeaturedWork";
+// Removed FeaturedWork import
 import { About } from "@/components/home/About";
 import { LatestNews } from "@/components/home/LatestNews";
 import { VideoShowcase } from "@/components/home/VideoShowcase";
@@ -22,7 +23,7 @@ export default function Home() {
         <VideoShowcase />
         <Services />
         <PhotoGallery />
-        <FeaturedWork />
+        {/* Removed FeaturedWork component */}
         <Team />
         <About />
         <LatestNews />
