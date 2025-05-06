@@ -12,27 +12,24 @@ export default function Work() {
   const projects = [
     {
       id: "makofi-s1",
-      title: "MAKOFI Season 1",
+      title: "MAKOFI",
       category: "Series",
       image: "/makofi-mad1xrli.png",
-      year: "2023",
       network: "Zambezi Magic"
     },
     
         {
       id: "turn-of-fortune",
-      title: "Turn of Fortune Season",
+      title: "Turn of Fortune",
       category: "Series",
-      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2023",
+      image: "/turn-of-fortune-mad296qa.jpg",
       network: "Zambezi Magic"
     },
     {
       id: "can-they-see-us",
       title: "Mwabi: Can They See Us",
       category: "Movies",
-      image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2024",
+      image: "/can-you-see-us-slide-mad29y0i.png",
       network: "Netflix"
     }
   ];
