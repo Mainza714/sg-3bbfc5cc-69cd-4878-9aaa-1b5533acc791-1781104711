@@ -69,7 +69,7 @@ export default function About() {
                 <div className="text-center">
                   <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-6">
                     <Image
-                      src="/lawrence-thompson.jpg"
+                      src="/director-lawrence-thompson-mab9szby.png"
                       alt="Lawrence Thompson"
                       fill
                       className="object-cover"
