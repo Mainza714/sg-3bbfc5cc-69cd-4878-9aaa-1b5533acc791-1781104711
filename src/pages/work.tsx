@@ -14,21 +14,14 @@ export default function Work() {
       id: "makofi-s1",
       title: "MAKOFI Season 1",
       category: "Series",
-      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "/public/makofi-mad1xrli.png",
       year: "2023",
       network: "Zambezi Magic"
     },
-    {
-      id: "makofi-s2",
-      title: "MAKOFI Season 2",
-      category: "Series",
-      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      year: "2024",
-      network: "Zambezi Magic"
-    },
-    {
+    
+        {
       id: "turn-of-fortune",
-      title: "Turn of Fortune Season 1",
+      title: "Turn of Fortune Season",
       category: "Series",
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       year: "2023",
