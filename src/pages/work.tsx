@@ -14,7 +14,7 @@ export default function Work() {
       id: "makofi-s1",
       title: "MAKOFI Season 1",
       category: "Series",
-      image: "/public/makofi-mad1xrli.png",
+      image: "/makofi-mad1xrli.png",
       year: "2023",
       network: "Zambezi Magic"
     },
