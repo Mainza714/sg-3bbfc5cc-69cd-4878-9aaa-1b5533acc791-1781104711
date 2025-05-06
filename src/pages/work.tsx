@@ -51,7 +51,7 @@ export default function Work() {
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
               <Image
-                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                src="/whatsapp-image-2022-10-24-at-15-56-35-thumb-mad2e7u3.jpeg"
                 alt="Our Work"
                 fill
                 priority
