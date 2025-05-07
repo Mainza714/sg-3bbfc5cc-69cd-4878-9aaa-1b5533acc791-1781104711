@@ -15,22 +15,24 @@ export default function Work() {
       title: "MAKOFI",
       category: "Series",
       image: "/makofi-mad1xrli.png",
-      network: "Zambezi Magic"
+      network: "Zambezi Magic",
+      year: "2023"
     },
-    
-        {
+    {
       id: "turn-of-fortune",
       title: "Turn of Fortune",
       category: "Series",
       image: "/turn-of-fortune-mad296qa.jpg",
-      network: "Zambezi Magic"
+      network: "Zambezi Magic",
+      year: "2022"
     },
     {
       id: "can-they-see-us",
       title: "Mwabi: Can They See Us",
       category: "Movies",
       image: "/can-you-see-us-slide-mad29y0i.png",
-      network: "Netflix"
+      network: "Netflix",
+      year: "2024"
     }
   ];
   
