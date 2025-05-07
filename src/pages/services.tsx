@@ -25,6 +25,7 @@ export default function Services() {
     },
     {
       title: "Television and Film Production",
+      image: "https://images.unsplash.com/photo-1540655037529-dec987208707?q=80&w=2070&auto=format&fit=crop",
       description: "With our fully equipped studio, we produce, film, and package a wide range of content for television and other platforms. We also produce Commercials, Documentaries locally produced shows, and Movies.",
       portfolio: [
         "Can They See Us The Movie",
@@ -34,10 +35,12 @@ export default function Services() {
     },
     {
       title: "Photography",
+      image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop",
       description: "Photography is where it all began, our passion for captured beauty developed into a passion to capture beautiful moments in time that one can revisit at any given chance. Our studio is well-equipped and ready for any photography needs."
     },
     {
       title: "International & Local Masterclass Facilitation",
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
       description: "We are well-positioned and connected to various local and international film industry professionals who are eager to share tips and skills on how to develop in the various areas of film. These masterclasses are facilitated in collaboration with various partners in the industry who are invested in seeing the growth and development of talent in the country and beyond."
     }
   ];
@@ -82,7 +85,18 @@ export default function Services() {
 
               <div className="grid gap-12">
                 {services.map((service, index) => (
-                  <Card key={index} className="bg-zinc-900 border-zinc-800">
+                  <Card key={index} className="bg-zinc-900 border-zinc-800 overflow-hidden">
+                    {service.image && (
+                      <div className="relative w-full h-80">
+                        <Image 
+                          src={service.image}
+                          alt={service.title}
+                          fill
+                          className="object-cover"
+                          priority={index === 0}
+                        />
+                      </div>
+                    )}
                     <CardContent className="p-6 space-y-4">
                       <h2 className="text-2xl md:text-3xl font-bold text-white">{service.title}</h2>
                       <p className="text-gray-300">{service.description}</p>
