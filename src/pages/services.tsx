@@ -9,9 +9,10 @@ import { Separator } from "@/components/ui/separator";
 export default function Services() {
   const services = [
     {
-      image: "/international-fixing-mae2fmxx.jpg",
+      
       title: "International Fixing",
       description: "With our vast experience and highly trained team, One of our key functions is to provide Production support to international Production houses looking to film in Zambia or anywhere else in Africa.",
+      image: "/international-fixing-mae2fmxx.jpg",
       subServices: [
         "Location Scouting",
         "Press/ Filming accreditation facilitation",
