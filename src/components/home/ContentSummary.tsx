@@ -46,7 +46,7 @@ export function ContentSummary() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 md:mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Our Content</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Content</h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             From compelling films to captivating television series, explore our diverse portfolio 
             of content that tells authentic stories and resonates with audiences worldwide.
