@@ -1,12 +1,10 @@
-
 import Head from "next/head";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/home/Hero";
-// Removed FeaturedWork import
 import { About } from "@/components/home/About";
 import { LatestNews } from "@/components/home/LatestNews";
 import { VideoShowcase } from "@/components/home/VideoShowcase";
-import { Services } from "@/components/home/Services";
+import { ContentSummary } from "@/components/home/ContentSummary";
 import { PhotoGallery } from "@/components/home/PhotoGallery";
 import { Team } from "@/components/home/Team";
 
@@ -21,9 +19,8 @@ export default function Home() {
       
       <Layout>
         <VideoShowcase />
-        <Services />
+        <ContentSummary />
         <PhotoGallery />
-        {/* Removed FeaturedWork component */}
         <Team />
         <About />
         <LatestNews />
