@@ -72,10 +72,8 @@ function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () 
   const links = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/work", label: "Work" },
-    { href: "/services", label: "Services" },
+    { href: "/content", label: "Content" },
     { href: "/team", label: "Team" },
-    { href: "/clients", label: "Clients" },
     { href: "/contact", label: "Contact" }
   ];
   
