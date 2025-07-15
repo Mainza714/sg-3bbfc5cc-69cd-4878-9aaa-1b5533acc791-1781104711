@@ -79,7 +79,6 @@ export function VideoShowcase() {
                     alt={video.title}
                     className="object-cover h-full w-full opacity-70"
                   />
-                  {/* Removed title and description here */}
                 </div>
               ))}
             </div>
@@ -111,29 +110,29 @@ export function VideoShowcase() {
         ))}
       </div>
       
-      {/* Content Layer (on top of videos) */}
-      <div className="relative z-10 container mx-auto px-4 md:px-6 h-screen flex items-center">
-        <div className="w-full md:w-1/2 lg:w-2/5">
-          <ul className="space-y-12 py-12">
+      {/* Content Layer (on top of videos) - Now horizontally aligned at the top */}
+      <div className="relative z-10 container mx-auto px-4 md:px-6 h-screen">
+        <div className="pt-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {videos.map((video) => (
-              <li 
+              <div 
                 key={video.id}
-                className="group"
+                className="group text-center"
                 onMouseEnter={() => handleMouseEnter(video.id)}
                 onMouseLeave={handleMouseLeave}
               >
                 <Link href={`/content/${video.id}`}>
                   <div className="cursor-pointer">
-                    <h3 className={`text-3xl md:text-4xl font-bold tracking-tight transition-colors duration-300 ${
+                    <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300 ${
                       activeVideo === video.id ? "text-white" : "text-gray-500"
                     } group-hover:text-white`}>
                       {video.title}
                     </h3>
                   </div>
                 </Link>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </section>
