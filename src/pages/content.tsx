@@ -1,70 +1,79 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 
 export default function Content() {
-  const categories = ["FILM", "TELEVISION", "AUDIO", "IN DEVELOPMENT"];
-  const [activeCategory, setActiveCategory] = useState("FILM");
+  const categories = ["All", "Film", "Television", "Audio", "In Development"];
+  const [activeCategory, setActiveCategory] = useState("All");
   
-  const contentItems = {
-    FILM: [
-      {
-        id: "can-they-see-us",
-        title: "Mwabi: Can They See Us",
-        image: "/can-you-see-us-slide-mad29y0i.png",
-        network: "Netflix",
-        year: "2024",
-        description: "A powerful drama exploring themes of identity and belonging."
-      }
-    ],
-    TELEVISION: [
-      {
-        id: "makofi-s1",
-        title: "MAKOFI",
-        image: "/makofi-mad1xrli.png",
-        network: "Zambezi Magic",
-        year: "2023",
-        description: "A compelling series that captivates audiences across Africa."
-      },
-      {
-        id: "turn-of-fortune",
-        title: "Turn of Fortune",
-        image: "/turn-of-fortune-mad296qa.jpg",
-        network: "Zambezi Magic",
-        year: "2022",
-        description: "A drama series exploring life's unexpected twists and turns."
-      }
-    ],
-    AUDIO: [
-      {
-        id: "audio-project-1",
-        title: "Podcast Series",
-        image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070&auto=format&fit=crop",
-        network: "Various Platforms",
-        year: "2024",
-        description: "Original audio content and podcast productions."
-      }
-    ],
-    "IN DEVELOPMENT": [
-      {
-        id: "upcoming-film",
-        title: "Untitled Project",
-        image: "https://images.unsplash.com/photo-1489599735734-79b4af4e22f2?q=80&w=2070&auto=format&fit=crop",
-        network: "TBA",
-        year: "2025",
-        description: "Exciting new projects currently in development."
-      }
-    ]
-  };
+  const content = [
+    {
+      id: "can-they-see-us",
+      title: "Mwabi: Can They See Us",
+      category: "Film",
+      image: "/can-you-see-us-slide-mad29y0i.png",
+      network: "Netflix",
+      year: "2024",
+      description: "A powerful drama exploring themes of identity and belonging."
+    },
+    {
+      id: "makofi-s1",
+      title: "MAKOFI",
+      category: "Television",
+      image: "/makofi-mad1xrli.png",
+      network: "Zambezi Magic",
+      year: "2023",
+      description: "A compelling series that captivates audiences across Africa."
+    },
+    {
+      id: "turn-of-fortune",
+      title: "Turn of Fortune",
+      category: "Television",
+      image: "/turn-of-fortune-mad296qa.jpg",
+      network: "Zambezi Magic",
+      year: "2022",
+      description: "A drama series exploring life's unexpected twists and turns."
+    },
+    {
+      id: "audio-project-1",
+      title: "Voices of Africa",
+      category: "Audio",
+      image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070&auto=format&fit=crop",
+      network: "Podcast Series",
+      year: "2024",
+      description: "An immersive audio documentary series exploring African stories."
+    },
+    {
+      id: "upcoming-film",
+      title: "Untitled Project",
+      category: "In Development",
+      image: "https://images.unsplash.com/photo-1489599735734-79b4af4e22f2?q=80&w=2070&auto=format&fit=crop",
+      network: "TBA",
+      year: "2025",
+      description: "Exciting new projects currently in development."
+    },
+    {
+      id: "upcoming-series",
+      title: "New Series Project",
+      category: "In Development",
+      image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=2070&auto=format&fit=crop",
+      network: "TBA",
+      year: "2025",
+      description: "A groundbreaking new television series in pre-production."
+    }
+  ];
   
-  const currentContent = contentItems[activeCategory as keyof typeof contentItems] || [];
+  const filteredContent = activeCategory === "All" 
+    ? content 
+    : content.filter(item => item.category === activeCategory);
 
   return (
     <>
       <Head>
-        <title>Content | Centripetal Media</title>
-        <meta name="description" content="Explore Centripetal Media's content across film, television, audio, and upcoming projects." />
+        <title>Our Content | Centripetal Media</title>
+        <meta name="description" content="Explore the diverse content portfolio of Centripetal Media, featuring films, television series, audio content, and projects in development." />
       </Head>
       
       <Layout>
@@ -82,7 +91,7 @@ export default function Content() {
             </div>
             <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white max-w-4xl tracking-tight leading-tight">
-                CONTENT
+                OUR CONTENT
               </h1>
             </div>
           </section>
@@ -94,13 +103,13 @@ export default function Content() {
                   <button
                     key={category}
                     onClick={() => setActiveCategory(category)}
-                    className={`px-6 py-3 text-sm tracking-wider transition-colors font-medium ${
+                    className={`px-4 py-2 text-sm tracking-wider transition-colors ${
                       activeCategory === category
                         ? "bg-black text-white"
                         : "border border-black text-black hover:bg-black hover:text-white"
                     }`}
                   >
-                    {category}
+                    {category.toUpperCase()}
                   </button>
                 ))}
               </div>
@@ -109,11 +118,11 @@ export default function Content() {
           
           <section className="py-12 bg-white">
             <div className="container mx-auto px-4 md:px-6">
-              {currentContent.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {currentContent.map((item) => (
-                    <div key={item.id} className="group">
-                      <div className="relative aspect-[16/9] overflow-hidden mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredContent.map((item) => (
+                  <Link key={item.id} href={`/content/${item.id}`} className="group">
+                    <div className="space-y-4">
+                      <div className="relative aspect-[16/9] overflow-hidden">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -121,28 +130,25 @@ export default function Content() {
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
-                      <div className="flex flex-col gap-2">
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-start">
+                          <span className="text-xs font-medium text-gray-500 tracking-wider">
+                            {item.category.toUpperCase()}
+                          </span>
+                          <span className="text-xs text-gray-500">{item.year}</span>
+                        </div>
                         <h3 className="text-xl font-bold tracking-tight group-hover:text-gray-700 transition-colors">
                           {item.title}
                         </h3>
-                        <p className="text-gray-600">{item.network}</p>
-                        <p className="text-gray-500 text-sm">{item.description}</p>
-                        <div className="flex justify-between items-center mt-2">
-                          <span className="text-gray-600 font-medium">{activeCategory}</span>
-                          <span className="text-gray-600">{item.year}</span>
-                        </div>
+                        <p className="text-gray-600 text-sm">{item.network}</p>
+                        <p className="text-gray-500 text-sm line-clamp-2">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-16">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Coming Soon</h3>
-                  <p className="text-gray-600 max-w-md mx-auto">
-                    We're working on exciting new content in this category. Stay tuned for updates!
-                  </p>
-                </div>
-              )}
+                  </Link>
+                ))}
+              </div>
             </div>
           </section>
         </div>
