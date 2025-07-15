@@ -122,7 +122,7 @@ export function VideoShowcase() {
                 onMouseEnter={() => handleMouseEnter(video.id)}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link href={`/work/${video.id}`}>
+                <Link href={`/content/${video.id}`}>
                   <div className="cursor-pointer">
                     <h3 className={`text-3xl md:text-4xl font-bold tracking-tight transition-colors duration-300 ${
                       activeVideo === video.id ? "text-white" : "text-gray-500"
