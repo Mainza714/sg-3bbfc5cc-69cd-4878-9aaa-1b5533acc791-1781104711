@@ -32,13 +32,13 @@ export function ContentSummary() {
       description: "A drama series exploring life's unexpected twists and turns."
     },
     {
-      id: "fading-memories",
-      title: "Fading Memories",
-      image: "/fading-memories-film-md8skxp3.jpg",
-      network: "Lawrence Thomson Film",
+      id: "lute",
+      title: "Lute",
+      image: "/lute-film-md8t0hqc.jpg",
+      network: "Lawrence Thompson Film",
       year: "2025",
       category: "IN DEVELOPMENT",
-      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu."
+      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Malumba Malumba, and Kondwani Zulu."
     }
   ];
 

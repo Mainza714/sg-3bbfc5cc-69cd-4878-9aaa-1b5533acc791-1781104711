@@ -46,6 +46,15 @@ export default function Content() {
       description: "An immersive audio documentary series exploring African stories."
     },
     {
+      id: "lute",
+      title: "Lute",
+      category: "In Development",
+      image: "/lute-film-md8t0hqc.jpg",
+      network: "Lawrence Thompson Film",
+      year: "2025",
+      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Malumba Malumba, and Kondwani Zulu. Produced by Andrew Thompson and written by Lawrence Thompson."
+    },
+    {
       id: "fading-memories",
       title: "Fading Memories",
       category: "In Development",
