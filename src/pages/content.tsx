@@ -58,7 +58,7 @@ export default function Content() {
       id: "fading-memories",
       title: "Fading Memories",
       category: "In Development",
-      image: "/fading-memories-film-md8skxp3.jpg",
+      image: "/fading-memories-film-md8tb00x.jpg",
       network: "Lawrence Thomson Film",
       year: "2025",
       description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu. Directed by Lawrence Thomson."
@@ -122,7 +122,9 @@ export default function Content() {
                 {filteredContent.map((item) => (
                   <Link key={item.id} href={`/content/${item.id}`} className="group">
                     <div className="space-y-4">
-                      <div className="relative aspect-[16/9] overflow-hidden">
+                      <div className={`relative overflow-hidden ${
+                        item.id === "fading-memories" ? "aspect-[3/4]" : "aspect-[16/9]"
+                      }`}>
                         <Image
                           src={item.image}
                           alt={item.title}
