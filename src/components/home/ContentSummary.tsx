@@ -32,13 +32,13 @@ export function ContentSummary() {
       description: "A drama series exploring life's unexpected twists and turns."
     },
     {
-      id: "upcoming-film",
-      title: "Untitled Project",
-      image: "https://images.unsplash.com/photo-1489599735734-79b4af4e22f2?q=80&w=2070&auto=format&fit=crop",
-      network: "TBA",
+      id: "fading-memories",
+      title: "Fading Memories",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
+      network: "Lawrence Thomson Film",
       year: "2025",
       category: "IN DEVELOPMENT",
-      description: "Exciting new projects currently in development."
+      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu."
     }
   ];
 
@@ -57,7 +57,9 @@ export function ContentSummary() {
           {featuredContent.map((item) => (
             <div key={item.id} className="group">
               <div className="space-y-4">
-                <div className="relative aspect-[16/9] overflow-hidden">
+                <div className={`relative overflow-hidden ${
+                  item.id === "fading-memories" ? "aspect-[3/4]" : "aspect-[16/9]"
+                }`}>
                   <Image
                     src={item.image}
                     alt={item.title}

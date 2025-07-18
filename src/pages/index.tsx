@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Centripetal Media | Innovative Storytelling</title>
         <meta name="description" content="Centripetal Media is a forward-thinking production company dedicated to creating authentic, thought-provoking content that resonates with audiences worldwide." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-cent-md8qd7zz.png" />
       </Head>
       
       <Layout>
