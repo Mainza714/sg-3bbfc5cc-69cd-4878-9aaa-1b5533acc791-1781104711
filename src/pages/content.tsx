@@ -53,24 +53,6 @@ export default function Content() {
       network: "Lawrence Thomson Film",
       year: "2025",
       description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu. Directed by Lawrence Thomson."
-    },
-    {
-      id: "upcoming-film",
-      title: "Untitled Project",
-      category: "In Development",
-      image: "https://images.unsplash.com/photo-1489599735734-79b4af4e22f2?q=80&w=2070&auto=format&fit=crop",
-      network: "TBA",
-      year: "2025",
-      description: "Exciting new projects currently in development."
-    },
-    {
-      id: "upcoming-series",
-      title: "New Series Project",
-      category: "In Development",
-      image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=2070&auto=format&fit=crop",
-      network: "TBA",
-      year: "2025",
-      description: "A groundbreaking new television series in pre-production."
     }
   ];
   
