@@ -46,6 +46,15 @@ export default function Content() {
       description: "An immersive audio documentary series exploring African stories."
     },
     {
+      id: "fading-memories",
+      title: "Fading Memories",
+      category: "In Development",
+      image: "/fading-memories-film-md8qy4e4.jpg",
+      network: "Lawrence Thomson Film",
+      year: "2025",
+      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu. Directed by Lawrence Thomson."
+    },
+    {
       id: "upcoming-film",
       title: "Untitled Project",
       category: "In Development",
