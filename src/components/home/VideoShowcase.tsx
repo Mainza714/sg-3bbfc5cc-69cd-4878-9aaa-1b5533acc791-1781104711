@@ -67,6 +67,17 @@ export function VideoShowcase() {
     setActiveVideo(null);
   };
 
+  const handleClick = (videoId: string) => {
+    if (activeVideo === videoId) {
+      // If clicking the same video, toggle play/pause
+      setIsPlaying(!isPlaying);
+    } else {
+      // If clicking a different video, switch to it and play
+      setActiveVideo(videoId);
+      setIsPlaying(true);
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-black text-white">
       {/* Video Background Layer */}
@@ -129,6 +140,7 @@ export function VideoShowcase() {
                 className="group text-center"
                 onMouseEnter={() => handleMouseEnter(video.id)}
                 onMouseLeave={handleMouseLeave}
+                onClick={() => handleClick(video.id)}
               >
                 <Link href={`/content/${video.id}`}>
                   <div className="cursor-pointer">
