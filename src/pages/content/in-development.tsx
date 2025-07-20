@@ -1,19 +1,27 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "@/components/layout/Layout";
 
 export default function InDevelopmentContent() {
-  const developmentContent = [
+  const inDevelopmentContent = [
     {
-      id: "faded-memories",
-      title: "Faded Memories",
-      category: "Film",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2025&auto=format&fit=crop",
-      network: "In Development",
+      id: "lute",
+      title: "Lute",
+      category: "In Development",
+      image: "/lute-film-md8t0hqc.jpg",
+      network: "Lawrence Thompson Film",
       year: "2025",
-      description: "A poignant exploration of memory, loss, and the fragments of time that shape our understanding of the past."
+      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Malumba Malumba, and Kondwani Zulu. Produced by Andrew Thompson and written by Lawrence Thompson."
+    },
+    {
+      id: "fading-memories",
+      title: "Fading Memories",
+      category: "In Development",
+      image: "/fading-memories-film-md8tb00x.jpg",
+      network: "Lawrence Thomson Film",
+      year: "2025",
+      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu. Directed by Lawrence Thomson."
     }
   ];
 
@@ -21,7 +29,7 @@ export default function InDevelopmentContent() {
     <>
       <Head>
         <title>In Development | Centripetal Media</title>
-        <meta name="description" content="Explore our upcoming projects currently in development, featuring innovative storytelling and compelling narratives." />
+        <meta name="description" content="Explore our upcoming projects currently in development, featuring exciting new films and series." />
       </Head>
       
       <Layout>
@@ -39,7 +47,7 @@ export default function InDevelopmentContent() {
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
               <Image
-                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2025&auto=format&fit=crop"
+                src="/lute-film-md8t0hqc.jpg"
                 alt="In Development"
                 fill
                 priority
@@ -56,10 +64,12 @@ export default function InDevelopmentContent() {
           <section className="py-16 bg-white">
             <div className="container mx-auto px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {developmentContent.map((item) => (
+                {inDevelopmentContent.map((item) => (
                   <Link key={item.id} href={`/content/${item.id}`} className="group">
                     <div className="space-y-4">
-                      <div className="relative aspect-[16/9] overflow-hidden">
+                      <div className={`relative overflow-hidden ${
+                        item.id === "fading-memories" ? "aspect-[3/4]" : "aspect-[16/9]"
+                      }`}>
                         <Image
                           src={item.image}
                           alt={item.title}
