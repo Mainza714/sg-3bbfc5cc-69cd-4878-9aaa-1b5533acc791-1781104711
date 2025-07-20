@@ -1,3 +1,4 @@
+
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +8,7 @@ interface Video {
   title: string;
   description: string;
   youtubeId: string;
+  artwork: string;
 }
 
 export function VideoShowcase() {
@@ -20,19 +22,22 @@ export function VideoShowcase() {
       id: "video-1",
       title: "MAKOFI",
       description: "A journey through time and memory",
-      youtubeId: "By4Gxr3_U6s"
+      youtubeId: "By4Gxr3_U6s",
+      artwork: "/makofi-mad1xrli.png"
     },
     {
       id: "video-2",
       title: "CAN YOU SEE US",
       description: "Exploring the depths of human connection",
-      youtubeId: "0FOCFfDR-qA"
+      youtubeId: "0FOCFfDR-qA",
+      artwork: "/can-you-see-us-slide-mad29y0i.png"
     },
     {
       id: "video-3",
       title: "TURN OF FORTUNE",
       description: "When destiny takes an unexpected path",
-      youtubeId: "27jNnFeCrSQ"
+      youtubeId: "27jNnFeCrSQ",
+      artwork: "/turn-of-fortune-mad296qa.jpg"
     }
   ];
 
@@ -67,27 +72,32 @@ export function VideoShowcase() {
     <section className="relative min-h-screen bg-black text-white">
       {/* Video Background Layer */}
       <div className="absolute inset-0 z-0">
-        {/* Default Video Thumbnails Grid */}
+        {/* Default Film Artwork Grid */}
         {!activeVideo && (
           <div className="absolute inset-0 bg-black">
             <div className="grid grid-cols-1 md:grid-cols-3 h-full">
               {videos.map((video) => (
                 <div key={video.id} className="relative h-full overflow-hidden">
                   <div className="absolute inset-0 bg-black/50 z-10"></div>
-                  <img 
-                    src={`https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`}
+                  <Image
+                    src={video.artwork}
                     alt={video.title}
-                    className="object-cover h-full w-full opacity-70"
+                    fill
+                    className="object-cover opacity-70 transition-transform duration-700 hover:scale-105"
+                    priority
                   />
                 </div>
               ))}
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white text-lg bg-black/70 px-6 py-3 rounded-full">Hover over a title to play</p>
+              <p className="text-white text-lg bg-black/70 px-6 py-3 rounded-full backdrop-blur-sm">
+                Hover over a title to play
+              </p>
             </div>
           </div>
         )}
 
+        {/* Video Players */}
         {videos.map((video) => (
           <div 
             key={video.id}
@@ -123,9 +133,9 @@ export function VideoShowcase() {
               >
                 <Link href={`/content/${video.id}`}>
                   <div className="cursor-pointer">
-                    <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300 ${
-                      activeVideo === video.id ? "text-white" : "text-gray-500"
-                    } group-hover:text-white`}>
+                    <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-300 ${
+                      activeVideo === video.id ? "text-white scale-105" : "text-gray-500"
+                    } group-hover:text-white group-hover:scale-105`}>
                       {video.title}
                     </h3>
                   </div>
