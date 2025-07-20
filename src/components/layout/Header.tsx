@@ -6,7 +6,6 @@ import Image from "next/image";
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isContentMenuOpen, setIsContentMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,12 +57,7 @@ export function Header() {
       >
         <div className="container mx-auto px-4 md:px-6 h-full flex flex-col justify-center">
           <nav className="flex flex-col items-center space-y-8 py-8">
-            <NavLinks 
-              mobile 
-              onClick={() => setIsMenuOpen(false)}
-              isContentMenuOpen={isContentMenuOpen}
-              setIsContentMenuOpen={setIsContentMenuOpen}
-            />
+            <NavLinks mobile onClick={() => setIsMenuOpen(false)} />
           </nav>
         </div>
       </div>
@@ -71,29 +65,13 @@ export function Header() {
   );
 }
 
-function NavLinks({ 
-  mobile = false, 
-  onClick, 
-  isContentMenuOpen, 
-  setIsContentMenuOpen 
-}: { 
-  mobile?: boolean; 
-  onClick?: () => void;
-  isContentMenuOpen?: boolean;
-  setIsContentMenuOpen?: (open: boolean) => void;
-}) {
+function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () => void }) {
   const links = [
     { href: "/", label: "Home" },
+    { href: "/content", label: "Content" },
     { href: "/about", label: "About" },
     { href: "/team", label: "Team" },
     { href: "/contact", label: "Contact" }
-  ];
-
-  const contentCategories = [
-    { href: "/content/film", label: "Film" },
-    { href: "/content/television", label: "Television" },
-    { href: "/content/audio", label: "Audio" },
-    { href: "/content/in-development", label: "In Development" }
   ];
   
   return (
@@ -108,30 +86,6 @@ function NavLinks({
           {link.label}
         </Link>
       ))}
-      
-      <div className="relative">
-        <button
-          className={`text-white hover:text-gray-300 transition-colors ${mobile ? "text-4xl md:text-6xl font-bold tracking-tighter" : "text-sm tracking-wider"}`}
-          onClick={() => setIsContentMenuOpen && setIsContentMenuOpen(!isContentMenuOpen)}
-        >
-          Content
-        </button>
-        
-        {isContentMenuOpen && (
-          <div className="mt-6 space-y-4">
-            {contentCategories.map((category) => (
-              <Link
-                key={category.href}
-                href={category.href}
-                className={`block text-gray-300 hover:text-white transition-colors ${mobile ? "text-2xl md:text-3xl font-medium tracking-tight ml-8" : "text-sm tracking-wider"}`}
-                onClick={onClick}
-              >
-                {category.label}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
     </>
   );
 }

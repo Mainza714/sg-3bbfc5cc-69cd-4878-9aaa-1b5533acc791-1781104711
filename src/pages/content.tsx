@@ -1,160 +1,134 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { Layout } from "@/components/layout/Layout";
 
-export default function Content() {
-  const categories = ["All", "Film", "Television", "Audio", "In Development"];
-  const [activeCategory, setActiveCategory] = useState("All");
-  
-  const content = [
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+
+export default function ContentPage() {
+  const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
+
+  const contentCategories = [
     {
-      id: "can-they-see-us",
-      title: "Mwabi: Can They See Us",
-      category: "Film",
+      id: "film",
+      title: "FILM",
+      href: "/content/film",
       image: "/can-you-see-us-slide-mad29y0i.png",
-      network: "Netflix",
-      year: "2024",
-      description: "A powerful drama exploring themes of identity and belonging."
+      description: "Compelling dramas and powerful storytelling"
     },
     {
-      id: "makofi-s1",
-      title: "MAKOFI",
-      category: "Television",
+      id: "television",
+      title: "TELEVISION",
+      href: "/content/television",
       image: "/makofi-mad1xrli.png",
-      network: "Zambezi Magic",
-      year: "2023",
-      description: "A compelling series that captivates audiences across Africa."
+      description: "Captivating series across Africa"
     },
     {
-      id: "turn-of-fortune",
-      title: "Turn of Fortune",
-      category: "Television",
-      image: "/turn-of-fortune-mad296qa.jpg",
-      network: "Zambezi Magic",
-      year: "2022",
-      description: "A drama series exploring life's unexpected twists and turns."
-    },
-    {
-      id: "audio-project-1",
-      title: "Voices of Africa",
-      category: "Audio",
+      id: "audio",
+      title: "AUDIO",
+      href: "/content/audio",
       image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070&auto=format&fit=crop",
-      network: "Podcast Series",
-      year: "2024",
-      description: "An immersive audio documentary series exploring African stories."
+      description: "Immersive audio experiences"
     },
     {
-      id: "lute",
-      title: "Lute",
-      category: "In Development",
+      id: "in-development",
+      title: "IN DEVELOPMENT",
+      href: "/content/in-development",
       image: "/lute-film-md8t0hqc.jpg",
-      network: "Lawrence Thompson Film",
-      year: "2025",
-      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Malumba Malumba, and Kondwani Zulu. Produced by Andrew Thompson and written by Lawrence Thompson."
-    },
-    {
-      id: "fading-memories",
-      title: "Fading Memories",
-      category: "In Development",
-      image: "/fading-memories-film-md8tb00x.jpg",
-      network: "Lawrence Thomson Film",
-      year: "2025",
-      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu. Directed by Lawrence Thomson."
+      description: "Upcoming projects and new ventures"
     }
   ];
-  
-  const filteredContent = activeCategory === "All" 
-    ? content 
-    : content.filter(item => item.category === activeCategory);
 
   return (
     <>
       <Head>
-        <title>Our Content | Centripetal Media</title>
-        <meta name="description" content="Explore the diverse content portfolio of Centripetal Media, featuring films, television series, audio content, and projects in development." />
+        <title>Content | Centripetal Media</title>
+        <meta name="description" content="Explore our diverse content portfolio spanning film, television, audio, and upcoming projects." />
       </Head>
       
-      <Layout>
-        <div className="pt-20">
-          <section className="relative h-[50vh] w-full overflow-hidden">
-            <div className="absolute inset-0 bg-black/60 z-10" />
-            <div className="relative h-full w-full">
-              <Image
-                src="/whatsapp-image-2022-10-24-at-15-56-35-thumb-mad2e7u3.jpeg"
-                alt="Our Content"
-                fill
-                priority
-                className="object-cover"
-              />
+      <div className="min-h-screen bg-black text-white">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex items-center justify-between h-20">
+              <Link href="/" className="text-white hover:text-gray-300 transition-colors">
+                ← Back
+              </Link>
+              
+              <div className="absolute left-1/2 transform -translate-x-1/2">
+                <Link href="/" className="relative h-16 w-16 md:h-20 md:w-20 block">
+                  <Image 
+                    src="/c-ma9y38y6.png" 
+                    alt="Centripetal Media" 
+                    fill
+                    className="object-contain"
+                  />
+                </Link>
+              </div>
+              
+              <div className="w-16"></div>
             </div>
-            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white max-w-4xl tracking-tight leading-tight">
-                OUR CONTENT
+          </div>
+        </header>
+
+        <main className="pt-20">
+          <div className="container mx-auto px-4 md:px-6 py-16">
+            <div className="text-center mb-16">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6">
+                CONTENT
               </h1>
+              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Discover our diverse portfolio of compelling stories across multiple mediums
+              </p>
             </div>
-          </section>
-          
-          <section className="py-12 bg-white">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setActiveCategory(category)}
-                    className={`px-4 py-2 text-sm tracking-wider transition-colors ${
-                      activeCategory === category
-                        ? "bg-black text-white"
-                        : "border border-black text-black hover:bg-black hover:text-white"
-                    }`}
-                  >
-                    {category.toUpperCase()}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </section>
-          
-          <section className="py-12 bg-white">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredContent.map((item) => (
-                  <Link key={item.id} href={`/content/${item.id}`} className="group">
-                    <div className="space-y-4">
-                      <div className={`relative overflow-hidden ${
-                        item.id === "fading-memories" ? "aspect-[3/4]" : "aspect-[16/9]"
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {contentCategories.map((category) => (
+                <Link
+                  key={category.id}
+                  href={category.href}
+                  className="group relative overflow-hidden aspect-[4/3] rounded-lg"
+                  onMouseEnter={() => setHoveredCategory(category.id)}
+                  onMouseLeave={() => setHoveredCategory(null)}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
+                  
+                  <Image
+                    src={category.image}
+                    alt={category.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  
+                  <div className="absolute inset-0 z-20 flex flex-col justify-end p-8">
+                    <div className="transform transition-transform duration-500 group-hover:translate-y-0 translate-y-4">
+                      <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-white">
+                        {category.title}
+                      </h2>
+                      <p className={`text-gray-200 text-lg transition-opacity duration-500 ${
+                        hoveredCategory === category.id ? 'opacity-100' : 'opacity-0'
                       }`}>
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-start">
-                          <span className="text-xs font-medium text-gray-500 tracking-wider">
-                            {item.category.toUpperCase()}
-                          </span>
-                          <span className="text-xs text-gray-500">{item.year}</span>
-                        </div>
-                        <h3 className="text-xl font-bold tracking-tight group-hover:text-gray-700 transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm">{item.network}</p>
-                        <p className="text-gray-500 text-sm line-clamp-2">
-                          {item.description}
-                        </p>
-                      </div>
+                        {category.description}
+                      </p>
                     </div>
-                  </Link>
-                ))}
-              </div>
+                    
+                    <div className={`mt-4 transform transition-all duration-500 ${
+                      hoveredCategory === category.id ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'
+                    }`}>
+                      <span className="inline-flex items-center text-white font-medium">
+                        Explore
+                        <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30" />
+                </Link>
+              ))}
             </div>
-          </section>
-        </div>
-      </Layout>
+          </div>
+        </main>
+      </div>
     </>
   );
 }
