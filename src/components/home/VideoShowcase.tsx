@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -134,7 +133,7 @@ export function VideoShowcase() {
                 <Link href={`/content/${video.id}`}>
                   <div className="cursor-pointer">
                     <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-300 ${
-                      activeVideo === video.id ? "text-white scale-105" : "text-gray-500"
+                      activeVideo === video.id ? "text-white scale-105" : "text-white"
                     } group-hover:text-white group-hover:scale-105`}>
                       {video.title}
                     </h3>
