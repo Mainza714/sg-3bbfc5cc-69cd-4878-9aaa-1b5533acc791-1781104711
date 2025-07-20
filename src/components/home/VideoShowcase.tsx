@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 interface Video {
@@ -101,7 +100,7 @@ export function VideoShowcase() {
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="text-white text-lg bg-black/70 px-6 py-3 rounded-full backdrop-blur-sm">
-                Hover over a title to play
+                Hover or click on a title to play
               </p>
             </div>
           </div>
@@ -137,20 +136,16 @@ export function VideoShowcase() {
             {videos.map((video) => (
               <div 
                 key={video.id}
-                className="group text-center"
+                className="group text-center cursor-pointer"
                 onMouseEnter={() => handleMouseEnter(video.id)}
                 onMouseLeave={handleMouseLeave}
                 onClick={() => handleClick(video.id)}
               >
-                <Link href={`/content/${video.id}`}>
-                  <div className="cursor-pointer">
-                    <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-300 ${
-                      activeVideo === video.id ? "text-white scale-105" : "text-white"
-                    } group-hover:text-white group-hover:scale-105`}>
-                      {video.title}
-                    </h3>
-                  </div>
-                </Link>
+                <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-300 ${
+                  activeVideo === video.id ? "text-white scale-105" : "text-white"
+                } group-hover:text-white group-hover:scale-105`}>
+                  {video.title}
+                </h3>
               </div>
             ))}
           </div>
