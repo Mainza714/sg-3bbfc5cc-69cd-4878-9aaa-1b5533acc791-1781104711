@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,6 +6,7 @@ import Image from "next/image";
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContentMenuOpen, setIsContentMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,10 +22,8 @@ export function Header() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-sm' : 'bg-transparent'}`}>
         <div className='container mx-auto px-4 md:px-6'>
           <div className='flex items-center justify-between h-20'>
-            {/* Add an empty div with the same width as the menu button to balance the layout */}
             <div className='w-6 md:w-8'></div>
             
-            {/* Center the logo */}
             <div className='absolute left-1/2 transform -translate-x-1/2'>
               <Link href='/' className='relative h-16 w-16 md:h-20 md:w-20 block'>
                 <Image 
@@ -35,7 +35,6 @@ export function Header() {
               </Link>
             </div>
             
-            {/* Keep the menu button on the right */}
             <button 
               className='text-white z-50'
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -52,7 +51,6 @@ export function Header() {
         </div>
       </header>
       
-      {/* Full screen menu overlay */}
       <div 
         className={`fixed inset-0 bg-black z-40 transition-opacity duration-300 ${
           isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -60,7 +58,12 @@ export function Header() {
       >
         <div className="container mx-auto px-4 md:px-6 h-full flex flex-col justify-center">
           <nav className="flex flex-col items-center space-y-8 py-8">
-            <NavLinks mobile onClick={() => setIsMenuOpen(false)} />
+            <NavLinks 
+              mobile 
+              onClick={() => setIsMenuOpen(false)}
+              isContentMenuOpen={isContentMenuOpen}
+              setIsContentMenuOpen={setIsContentMenuOpen}
+            />
           </nav>
         </div>
       </div>
@@ -68,13 +71,29 @@ export function Header() {
   );
 }
 
-function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () => void }) {
+function NavLinks({ 
+  mobile = false, 
+  onClick, 
+  isContentMenuOpen, 
+  setIsContentMenuOpen 
+}: { 
+  mobile?: boolean; 
+  onClick?: () => void;
+  isContentMenuOpen?: boolean;
+  setIsContentMenuOpen?: (open: boolean) => void;
+}) {
   const links = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/content", label: "Content" },
     { href: "/team", label: "Team" },
     { href: "/contact", label: "Contact" }
+  ];
+
+  const contentCategories = [
+    { href: "/content/film", label: "Film" },
+    { href: "/content/television", label: "Television" },
+    { href: "/content/audio", label: "Audio" },
+    { href: "/content/in-development", label: "In Development" }
   ];
   
   return (
@@ -89,6 +108,30 @@ function NavLinks({ mobile = false, onClick }: { mobile?: boolean; onClick?: () 
           {link.label}
         </Link>
       ))}
+      
+      <div className="relative">
+        <button
+          className={`text-white hover:text-gray-300 transition-colors ${mobile ? "text-4xl md:text-6xl font-bold tracking-tighter" : "text-sm tracking-wider"}`}
+          onClick={() => setIsContentMenuOpen && setIsContentMenuOpen(!isContentMenuOpen)}
+        >
+          Content
+        </button>
+        
+        {isContentMenuOpen && (
+          <div className="mt-6 space-y-4">
+            {contentCategories.map((category) => (
+              <Link
+                key={category.href}
+                href={category.href}
+                className={`block text-gray-300 hover:text-white transition-colors ${mobile ? "text-2xl md:text-3xl font-medium tracking-tight ml-8" : "text-sm tracking-wider"}`}
+                onClick={onClick}
+              >
+                {category.label}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
     </>
   );
 }
