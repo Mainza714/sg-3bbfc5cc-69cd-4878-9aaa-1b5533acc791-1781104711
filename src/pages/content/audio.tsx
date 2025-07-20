@@ -1,21 +1,10 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "@/components/layout/Layout";
 
 export default function AudioContent() {
-  const audioContent = [
-    {
-      id: "audio-project-1",
-      title: "Voices of Africa",
-      category: "Audio",
-      image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070&auto=format&fit=crop",
-      network: "Podcast Series",
-      year: "2024",
-      description: "An immersive audio documentary series exploring African stories."
-    }
-  ];
-
   return (
     <>
       <Head>
@@ -54,36 +43,13 @@ export default function AudioContent() {
           
           <section className="py-16 bg-white">
             <div className="container mx-auto px-4 md:px-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {audioContent.map((item) => (
-                  <Link key={item.id} href={`/content/${item.id}`} className="group">
-                    <div className="space-y-4">
-                      <div className="relative aspect-[16/9] overflow-hidden">
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-start">
-                          <span className="text-xs font-medium text-gray-500 tracking-wider">
-                            {item.category.toUpperCase()}
-                          </span>
-                          <span className="text-xs text-gray-500">{item.year}</span>
-                        </div>
-                        <h3 className="text-xl font-bold tracking-tight group-hover:text-gray-700 transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm">{item.network}</p>
-                        <p className="text-gray-500 text-sm line-clamp-2">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+              <div className="text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Coming Soon</h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  We're working on exciting audio content that will showcase compelling stories 
+                  through immersive sound experiences. Stay tuned for updates on our upcoming 
+                  podcast series and audio documentaries.
+                </p>
               </div>
             </div>
           </section>

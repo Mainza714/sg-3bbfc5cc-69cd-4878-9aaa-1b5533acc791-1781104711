@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,13 +7,40 @@ import { Layout } from "@/components/layout/Layout";
 export default function FilmContent() {
   const filmContent = [
     {
-      id: "can-they-see-us",
-      title: "Mwabi: Can They See Us",
+      id: "can-you-see-us",
+      title: "Can You See Us",
       category: "Film",
       image: "/can-you-see-us-slide-mad29y0i.png",
       network: "Netflix",
       year: "2024",
       description: "A powerful drama exploring themes of identity and belonging."
+    },
+    {
+      id: "makofi",
+      title: "MAKOFI",
+      category: "Film",
+      image: "/makofi-mad1xrli.png",
+      network: "Independent",
+      year: "2024",
+      description: "A journey through time and memory, exploring the depths of human experience."
+    },
+    {
+      id: "turn-of-fortune",
+      title: "Turn of Fortune",
+      category: "Film",
+      image: "/turn-of-fortune-mad296qa.jpg",
+      network: "Independent",
+      year: "2024",
+      description: "When destiny takes an unexpected path, exploring themes of fate and choice."
+    },
+    {
+      id: "lute",
+      title: "Lute",
+      category: "Film",
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2070&auto=format&fit=crop",
+      network: "Independent",
+      year: "2024",
+      description: "A musical journey exploring traditional instruments in contemporary storytelling."
     }
   ];
 
