@@ -11,30 +11,22 @@ export default function ContentPage() {
     {
       id: "film",
       title: "FILM",
-      href: "/content/film",
-      image: "/can-you-see-us-slide-mad29y0i.png",
-      description: "Compelling dramas and powerful storytelling"
+      href: "/content/film"
     },
     {
       id: "television",
       title: "TELEVISION",
-      href: "/content/television",
-      image: "/makofi-mad1xrli.png",
-      description: "Captivating series across Africa"
+      href: "/content/television"
     },
     {
       id: "audio",
       title: "AUDIO",
-      href: "/content/audio",
-      image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070&auto=format&fit=crop",
-      description: "Immersive audio experiences"
+      href: "/content/audio"
     },
     {
       id: "in-development",
       title: "IN DEVELOPMENT",
-      href: "/content/in-development",
-      image: "/lute-film-md8t0hqc.jpg",
-      description: "Upcoming projects and new ventures"
+      href: "/content/in-development"
     }
   ];
 
@@ -70,59 +62,23 @@ export default function ContentPage() {
         </header>
 
         <main className="pt-20">
-          <div className="container mx-auto px-4 md:px-6 py-16">
-            <div className="text-center mb-16">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6">
-                CONTENT
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Discover our diverse portfolio of compelling stories across multiple mediums
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="container mx-auto px-4 md:px-6 h-screen flex flex-col justify-center">
+            <div className="flex flex-col items-center space-y-12 py-8">
               {contentCategories.map((category) => (
                 <Link
                   key={category.id}
                   href={category.href}
-                  className="group relative overflow-hidden aspect-[4/3] rounded-lg"
+                  className="group relative"
                   onMouseEnter={() => setHoveredCategory(category.id)}
                   onMouseLeave={() => setHoveredCategory(null)}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white hover:text-gray-300 transition-all duration-500 transform group-hover:scale-105">
+                    {category.title}
+                  </h2>
                   
-                  <Image
-                    src={category.image}
-                    alt={category.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  
-                  <div className="absolute inset-0 z-20 flex flex-col justify-end p-8">
-                    <div className="transform transition-transform duration-500 group-hover:translate-y-0 translate-y-4">
-                      <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-white">
-                        {category.title}
-                      </h2>
-                      <p className={`text-gray-200 text-lg transition-opacity duration-500 ${
-                        hoveredCategory === category.id ? 'opacity-100' : 'opacity-0'
-                      }`}>
-                        {category.description}
-                      </p>
-                    </div>
-                    
-                    <div className={`mt-4 transform transition-all duration-500 ${
-                      hoveredCategory === category.id ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'
-                    }`}>
-                      <span className="inline-flex items-center text-white font-medium">
-                        Explore
-                        <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30" />
+                  <div className={`absolute -bottom-2 left-0 h-0.5 bg-white transition-all duration-500 ${
+                    hoveredCategory === category.id ? 'w-full' : 'w-0'
+                  }`} />
                 </Link>
               ))}
             </div>
