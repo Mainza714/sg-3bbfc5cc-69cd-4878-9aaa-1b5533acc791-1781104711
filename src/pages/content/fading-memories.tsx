@@ -1,0 +1,141 @@
+
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { Layout } from "@/components/layout/Layout";
+
+export default function FadingMemoriesPage() {
+  return (
+    <>
+      <Head>
+        <title>Fading Memories | Centripetal Media</title>
+        <meta name="description" content="A haunting exploration of memory and time, where the past and present collide in unexpected ways." />
+      </Head>
+      
+      <Layout>
+        <div className="pt-20">
+          <div className="container mx-auto px-4 md:px-6 mb-8">
+            <Link href="/content/in-development" className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to In Development
+            </Link>
+          </div>
+          
+          <section className="relative h-[70vh] w-full overflow-hidden">
+            <div className="absolute inset-0 bg-black/70 z-10" />
+            <div className="relative h-full w-full">
+              <Image
+                src="/fading-memories-film-md8tb00x.jpg"
+                alt="Fading Memories"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
+              <div className="max-w-3xl">
+                <div className="mb-4">
+                  <span className="inline-block bg-indigo-600 text-white px-3 py-1 text-sm font-medium rounded">
+                    IN DEVELOPMENT
+                  </span>
+                </div>
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
+                  FADING MEMORIES
+                </h1>
+                <div className="flex items-center justify-center gap-6 text-white/80 mb-6">
+                  <span className="text-lg">2025</span>
+                  <span className="text-lg">•</span>
+                  <span className="text-lg">Film</span>
+                  <span className="text-lg">•</span>
+                  <span className="text-lg">Drama</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div className="lg:col-span-2 space-y-8">
+                  <div>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">The Enigma Unfolds</h2>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                      Time moves in mysterious ways, and memory even more so. Fading Memories explores the delicate boundary between what we remember and what we choose to forget, between the stories we tell ourselves and the truths that lie beneath.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      In this haunting narrative, the past refuses to remain buried, surfacing in unexpected moments and challenging everything the characters thought they knew about themselves. What emerges is a meditation on identity, loss, and the power of human resilience.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Artistic Approach</h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      The film employs a unique visual language that mirrors the fragmented nature of memory itself. Through innovative cinematography and sound design, audiences will experience the disorienting beauty of recollection and the weight of forgotten moments.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Thematic Depth</h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      At its core, Fading Memories questions the reliability of our own perceptions. It invites viewers to consider how the stories we construct about our lives shape our reality, and what happens when those narratives begin to unravel.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-8">
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Project Information</h3>
+                    <div className="space-y-3">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Anticipated Release</span>
+                        <span className="font-medium">2025</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Production House</span>
+                        <span className="font-medium">Lawrence Thomson Film</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Genre</span>
+                        <span className="font-medium">Drama</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Development Stage</span>
+                        <span className="font-medium">Pre-Production</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Featured Cast</h3>
+                    <div className="space-y-2 text-gray-700 text-sm">
+                      <p>Naomi Sakala</p>
+                      <p>Catherine Mulope</p>
+                      <p>Leo Simukoko</p>
+                      <p>Kondwani Zulu</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Creative Team</h3>
+                    <div className="space-y-2 text-gray-700 text-sm">
+                      <p><span className="font-medium">Director:</span> Lawrence Thomson</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Artistic Statement</h3>
+                    <p className="text-gray-700 text-sm italic">
+                      "Memory is not a recording device, but a creative act. This film explores the poetry found in the spaces between what we remember and what actually was."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </Layout>
+    </>
+  );
+}
