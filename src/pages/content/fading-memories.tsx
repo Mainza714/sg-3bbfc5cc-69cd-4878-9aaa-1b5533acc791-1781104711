@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +7,47 @@ export default function FadingMemoriesPage() {
   return (
     <>
       <Head>
-        <title>Fading Memories | Centripetal Media</title>
-        <meta name="description" content="A haunting exploration of memory and time, where the past and present collide in unexpected ways." />
+        <title>Fading Memories | African Film in Development | Centripetal Media</title>
+        <meta name="description" content="Fading Memories - A haunting African drama exploring memory and time by Centripetal Media. Where the past and present collide in unexpected ways through authentic African cinema." />
+        <meta name="keywords" content="Fading Memories film, African drama, memory film, Centripetal Media, Zambian cinema, independent film, African storytelling, Lawrence Thomson director" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Fading Memories | African Film in Development | Centripetal Media" />
+        <meta property="og:description" content="A haunting exploration of memory and time where past and present collide in African cinema." />
+        <meta property="og:image" content="https://centripetalmedia.digital/fading-memories-film-md8tb00x.jpg" />
+        <meta property="og:url" content="https://centripetalmedia.digital/content/fading-memories" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:title" content="Fading Memories | African Film in Development" />
+        <meta name="twitter:description" content="A haunting exploration of memory and time where past and present collide in African cinema." />
+        <meta name="twitter:image" content="https://centripetalmedia.digital/fading-memories-film-md8tb00x.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://centripetalmedia.digital/content/fading-memories" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Movie",
+              "name": "Fading Memories",
+              "description": "A haunting exploration of memory and time where past and present collide in African cinema",
+              "productionCompany": {
+                "@type": "Organization",
+                "name": "Centripetal Media"
+              },
+              "director": {
+                "@type": "Person",
+                "name": "Lawrence Thomson"
+              },
+              "genre": "Drama",
+              "inLanguage": "en",
+              "countryOfOrigin": "ZM"
+            })
+          }}
+        />
       </Head>
       
       <Layout>

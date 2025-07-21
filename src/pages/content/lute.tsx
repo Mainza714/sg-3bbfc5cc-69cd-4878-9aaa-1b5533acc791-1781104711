@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +7,47 @@ export default function LutePage() {
   return (
     <>
       <Head>
-        <title>Lute | Centripetal Media</title>
-        <meta name="description" content="A mysterious drama in development, featuring an ensemble cast in an enigmatic narrative." />
+        <title>Lute | African Film in Development | Centripetal Media</title>
+        <meta name="description" content="Lute - A mysterious African drama film in development by Centripetal Media. Featuring an ensemble cast in an enigmatic narrative exploring human connection and African storytelling." />
+        <meta name="keywords" content="Lute film, African drama, Centripetal Media, Zambian cinema, independent film, African storytelling, film in development, Lawrence Thompson" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Lute | African Film in Development | Centripetal Media" />
+        <meta property="og:description" content="A mysterious African drama exploring human connection through enigmatic storytelling." />
+        <meta property="og:image" content="https://centripetalmedia.digital/lute-film-md8t0hqc.jpg" />
+        <meta property="og:url" content="https://centripetalmedia.digital/content/lute" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:title" content="Lute | African Film in Development" />
+        <meta name="twitter:description" content="A mysterious African drama exploring human connection through enigmatic storytelling." />
+        <meta name="twitter:image" content="https://centripetalmedia.digital/lute-film-md8t0hqc.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://centripetalmedia.digital/content/lute" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Movie",
+              "name": "Lute",
+              "description": "A mysterious African drama exploring human connection through enigmatic storytelling",
+              "productionCompany": {
+                "@type": "Organization",
+                "name": "Centripetal Media"
+              },
+              "director": {
+                "@type": "Person",
+                "name": "Lawrence Thompson"
+              },
+              "genre": "Drama",
+              "inLanguage": "en",
+              "countryOfOrigin": "ZM"
+            })
+          }}
+        />
       </Head>
       
       <Layout>
