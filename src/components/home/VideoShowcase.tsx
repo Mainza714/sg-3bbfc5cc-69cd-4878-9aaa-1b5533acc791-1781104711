@@ -19,21 +19,21 @@ export function VideoShowcase() {
     {
       id: "video-1",
       title: "MAKOFI",
-      description: "A journey through time and memory",
+      description: "A journey through time and memory showcasing African storytelling",
       youtubeId: "By4Gxr3_U6s",
       artwork: "/makofi-mad1xrli.png"
     },
     {
       id: "video-2",
       title: "CAN YOU SEE US",
-      description: "Exploring the depths of human connection",
+      description: "Exploring the depths of human connection in African cinema",
       youtubeId: "0FOCFfDR-qA",
       artwork: "/can-you-see-us-slide-mad29y0i.png"
     },
     {
       id: "video-3",
       title: "TURN OF FORTUNE",
-      description: "When destiny takes an unexpected path",
+      description: "When destiny takes an unexpected path in this Zambian film",
       youtubeId: "27jNnFeCrSQ",
       artwork: "/turn-of-fortune-mad296qa.jpg"
     }
@@ -90,7 +90,7 @@ export function VideoShowcase() {
                   <div className="absolute inset-0 bg-black/50 z-10"></div>
                   <Image
                     src={video.artwork}
-                    alt={video.title}
+                    alt={`${video.title} - African film by Centripetal Media showcasing ${video.description}`}
                     fill
                     className="object-cover opacity-70 transition-transform duration-700 hover:scale-105"
                     priority
@@ -100,7 +100,7 @@ export function VideoShowcase() {
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="text-white text-lg bg-black/70 px-6 py-3 rounded-full backdrop-blur-sm">
-                Hover or click on a title to play
+                Discover our African film productions - Hover or click on a title to play
               </p>
             </div>
           </div>
@@ -141,11 +141,11 @@ export function VideoShowcase() {
                 onMouseLeave={handleMouseLeave}
                 onClick={() => handleClick(video.id)}
               >
-                <h3 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-300 ${
+                <h1 className={`text-2xl md:text-3xl font-bold tracking-tight transition-all duration-300 ${
                   activeVideo === video.id ? "text-white scale-105" : "text-white"
                 } group-hover:text-white group-hover:scale-105`}>
                   {video.title}
-                </h3>
+                </h1>
               </div>
             ))}
           </div>

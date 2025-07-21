@@ -7,8 +7,52 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About | Centripetal Media</title>
-        <meta name="description" content="Learn about Centripetal Media, our mission, vision, and the team behind our innovative storytelling." />
+        <title>About Centripetal Media | African Film & Television Production Studio</title>
+        <meta name="description" content="Learn about Centripetal Media, a leading African film production company based in Zambia. Discover our mission, vision, and the creative team behind our innovative storytelling and authentic African cinema." />
+        <meta name="keywords" content="African film studio, Zambian film production, independent filmmakers Africa, Lawrence Thompson director, African storytelling, film production company Zambia, African cinema, television production Africa" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="About Centripetal Media | African Film & Television Production Studio" />
+        <meta property="og:description" content="Leading African film production company creating authentic stories from Zambia to the world." />
+        <meta property="og:image" content="https://centripetalmedia.digital/director-lawrence-thompson-mab9szby.png" />
+        <meta property="og:url" content="https://centripetalmedia.digital/about" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:title" content="About Centripetal Media | African Film Production Studio" />
+        <meta name="twitter:description" content="Leading African film production company creating authentic stories from Zambia to the world." />
+        <meta name="twitter:image" content="https://centripetalmedia.digital/director-lawrence-thompson-mab9szby.png" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://centripetalmedia.digital/about" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Centripetal Media",
+              "description": "African film and television production studio creating authentic stories from Zambia to the world",
+              "url": "https://centripetalmedia.digital",
+              "logo": "https://centripetalmedia.digital/logo-cent-md8qd7zz.png",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ZM",
+                "addressRegion": "Zambia"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "Lawrence Thompson",
+                "jobTitle": "Founder & Creative Director"
+              },
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=100063657996917",
+                "https://www.instagram.com/centripetal_media_zambia"
+              ]
+            })
+          }}
+        />
       </Head>
       
       <Layout>

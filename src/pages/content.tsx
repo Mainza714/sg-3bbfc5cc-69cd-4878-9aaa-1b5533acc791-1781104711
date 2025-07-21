@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -33,8 +32,18 @@ export default function ContentPage() {
   return (
     <>
       <Head>
-        <title>Content | Centripetal Media</title>
-        <meta name="description" content="Explore our diverse content portfolio spanning film, television, audio, and upcoming projects." />
+        <title>Content Portfolio | Centripetal Media Films & Television</title>
+        <meta name="description" content="Explore Centripetal Media's diverse content portfolio spanning African films, television series, audio productions, and upcoming projects. Discover authentic African storytelling and independent cinema." />
+        <meta name="keywords" content="African films, Zambian television series, independent cinema Africa, film portfolio, TV production Zambia, African media content, Centripetal Media films, African storytelling" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Content Portfolio | Centripetal Media Films & Television" />
+        <meta property="og:description" content="Explore our diverse portfolio of African films, television series, and media content." />
+        <meta property="og:image" content="https://centripetalmedia.digital/logo-cent-md8qd7zz.png" />
+        <meta property="og:url" content="https://centripetalmedia.digital/content" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://centripetalmedia.digital/content" />
       </Head>
       
       <div className="min-h-screen bg-black text-white">
