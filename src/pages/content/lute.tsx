@@ -134,7 +134,10 @@ export default function LutePage() {
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Cast</h3>
                     <div className="space-y-2 text-gray-700 text-sm">
+                      <p>Constridah Luyando</p>
                       <p>Catherine Mulope</p>
+                      <p>Zodwa Khumalo</p>
+                      <p>Clementine Siwale</p>
                       <p>Malumba Malumba</p>
                       <p>Kondwani Zulu</p>
                     </div>
