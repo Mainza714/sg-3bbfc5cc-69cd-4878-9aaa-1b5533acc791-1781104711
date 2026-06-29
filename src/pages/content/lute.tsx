@@ -7,20 +7,20 @@ export default function LutePage() {
   return (
     <>
       <Head>
-        <title>Lute | African Film in Development | Centripetal Media</title>
-        <meta name="description" content="Lute - A mysterious African drama film in development by Centripetal Media. Featuring an ensemble cast in an enigmatic narrative exploring human connection and African storytelling." />
-        <meta name="keywords" content="Lute film, African drama, Centripetal Media, Zambian cinema, independent film, African storytelling, film in development, Lawrence Thompson" />
+        <title>Lute | Centripetal Media</title>
+        <meta name="description" content="Lute - An African drama film by Centripetal Media. A powerful story of family, tradition, and resilience." />
+        <meta name="keywords" content="Lute film, African drama, Centripetal Media, Zambian cinema, independent film, African storytelling, Lawrence Thompson" />
         
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Lute | African Film in Development | Centripetal Media" />
-        <meta property="og:description" content="A mysterious African drama exploring human connection through enigmatic storytelling." />
-        <meta property="og:image" content="https://centripetalmedia.digital/lute-film-md8t0hqc.jpg" />
+        <meta property="og:title" content="Lute | Centripetal Media" />
+        <meta property="og:description" content="A powerful African drama exploring family, tradition, and resilience." />
+        <meta property="og:image" content="https://centripetalmedia.digital/LUTE_PREVIEW_2_Horzontal.jpg" />
         <meta property="og:url" content="https://centripetalmedia.digital/content/lute" />
         
         {/* Twitter Card Tags */}
-        <meta name="twitter:title" content="Lute | African Film in Development" />
-        <meta name="twitter:description" content="A mysterious African drama exploring human connection through enigmatic storytelling." />
-        <meta name="twitter:image" content="https://centripetalmedia.digital/lute-film-md8t0hqc.jpg" />
+        <meta name="twitter:title" content="Lute | Centripetal Media" />
+        <meta name="twitter:description" content="A powerful African drama exploring family, tradition, and resilience." />
+        <meta name="twitter:image" content="https://centripetalmedia.digital/LUTE_PREVIEW_2_Horzontal.jpg" />
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://centripetalmedia.digital/content/lute" />
@@ -33,7 +33,7 @@ export default function LutePage() {
               "@context": "https://schema.org",
               "@type": "Movie",
               "name": "Lute",
-              "description": "A mysterious African drama exploring human connection through enigmatic storytelling",
+              "description": "A powerful African drama exploring family, tradition, and resilience",
               "productionCompany": {
                 "@type": "Organization",
                 "name": "Centripetal Media"
@@ -65,7 +65,7 @@ export default function LutePage() {
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
               <Image
-                src="/lute-film-md8t0hqc.jpg"
+                src="/LUTE_PREVIEW_2_Horzontal.jpg"
                 alt="Lute"
                 fill
                 priority
@@ -76,7 +76,7 @@ export default function LutePage() {
               <div className="max-w-2xl">
                 <div className="mb-4">
                   <span className="inline-block bg-amber-600 text-white px-3 py-1 text-sm font-medium rounded">
-                    IN DEVELOPMENT
+                    POST PRODUCTION
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
@@ -97,27 +97,23 @@ export default function LutePage() {
             <div className="container mx-auto px-4 md:px-6">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div className="lg:col-span-2 space-y-8">
+                  <div className="relative w-full aspect-video mb-8">
+                    <Image
+                      src="/LUTE_PREVIEW_2_Horzontal.jpg"
+                      alt="Lute - Film Poster"
+                      fill
+                      className="object-contain rounded-lg"
+                      priority
+                    />
+                  </div>
+                  
                   <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Project Overview</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Synopsis</h2>
                     <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                      In the shadows of anticipation, a story unfolds that defies conventional narrative. Lute emerges as a cinematic exploration of human connection, where silence speaks louder than words and every gesture carries the weight of unspoken truths.
+                      In the dark of night Young LUTE and her mother travel back to the village of Berry Lute's father, their lives are thrown upside down when Berry her father dies in a car crash. LUTE looks at the night sky and asks her mother "Mummy why is the sky the same are we going back home?" Thandiwe looks at her child and ponders if she understands what is going on "Our lives are going to change my child, please forgive me " and she begins to cry, LUTE wipes the tear from her mother's eyes and promises to take care of her mother and to look after her, As per tradition Thandiwe has to take the funeral to the village for all the relatives in his village to mourn him as well and for them to carry out traditional rites.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      This enigmatic project weaves together the threads of destiny and choice, creating a tapestry that challenges audiences to look beyond the surface. What begins as a simple tale transforms into something far more profound, leaving viewers questioning the very nature of storytelling itself.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Creative Vision</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      The creative team behind Lute has crafted a narrative that exists in the spaces between words, in the pauses between breaths. This is cinema that trusts its audience, inviting them to become active participants in the unfolding mystery.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Development Status</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      Currently in the delicate stages of pre-production, Lute represents a bold step forward in contemporary African cinema. The project maintains an air of mystery that extends beyond its narrative into its very creation.
+                      Suddenly the driver of the van car starts to honk the horn to announce the arrival of the funeral to the villagers. The vehicle winds down a narrow bush track, the next thing they see are fire torches along the road as villagers wait for their arrival. When they enter an opening in the village there is a loud sound of women wailing mournfully as per the Nsenga tradition. LUTE, her mother, and their entourage are welcomed and informed that the rites would take place the following morning.
                     </p>
                   </div>
                 </div>
@@ -132,7 +128,7 @@ export default function LutePage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Production</span>
-                        <span className="font-medium">Lawrence Thompson Film</span>
+                        <span className="font-medium">Centripetal Media</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Genre</span>
@@ -140,7 +136,7 @@ export default function LutePage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Status</span>
-                        <span className="font-medium">Pre-Production</span>
+                        <span className="font-medium">Post Production</span>
                       </div>
                     </div>
                   </div>
@@ -148,7 +144,6 @@ export default function LutePage() {
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Cast</h3>
                     <div className="space-y-2 text-gray-700 text-sm">
-                      <p>Naomi Sakala</p>
                       <p>Catherine Mulope</p>
                       <p>Malumba Malumba</p>
                       <p>Kondwani Zulu</p>
@@ -158,8 +153,8 @@ export default function LutePage() {
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Production Team</h3>
                     <div className="space-y-2 text-gray-700 text-sm">
-                      <p><span className="font-medium">Producer:</span> Andrew Thompson</p>
-                      <p><span className="font-medium">Writer:</span> Lawrence Thompson</p>
+                      <p><span className="font-medium">Writer/Director:</span> Lawrence Thompson</p>
+                      <p><span className="font-medium">Director of Photography:</span> Longwe Nyirenda</p>
                     </div>
                   </div>
                 </div>
