@@ -18,7 +18,7 @@ export function ContentSummary() {
       title: "MAKOFI",
       image: "/makofi-mad1xrli.png",
       network: "Zambezi Magic",
-      year: "2023",
+      year: "2021",
       category: "TELEVISION",
       description: "A compelling series that captivates audiences across Africa."
     },
@@ -27,7 +27,7 @@ export function ContentSummary() {
       title: "Turn of Fortune",
       image: "/turn-of-fortune-mad296qa.jpg",
       network: "Zambezi Magic",
-      year: "2022",
+      year: "2019",
       category: "TELEVISION",
       description: "A drama series exploring life's unexpected twists and turns."
     },
@@ -76,9 +76,11 @@ export function ContentSummary() {
                     {item.title}
                   </h3>
                   <p className="text-gray-600 text-sm">{item.network}</p>
-                  <p className="text-gray-500 text-sm line-clamp-2">
-                    {item.description}
-                  </p>
+                  {item.description && (
+                    <p className="text-gray-500 text-sm line-clamp-2">
+                      {item.description}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
