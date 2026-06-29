@@ -15,6 +15,15 @@ export default function InDevelopmentContent() {
       description: ""
     },
     {
+      id: "kabanana-the-legacy",
+      title: "Kabanana: The Legacy",
+      category: "In Development",
+      image: "/Kabanana_Poster.jpg",
+      network: "Centripetal Media",
+      year: "2027",
+      description: "A dynasty built on power, fear, sacrifice, and secrets."
+    },
+    {
       id: "fading-memories",
       title: "Fading Memories",
       category: "In Development",
