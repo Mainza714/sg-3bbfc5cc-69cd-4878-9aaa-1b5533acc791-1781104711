@@ -14,13 +14,13 @@ export default function About() {
         {/* Open Graph Tags */}
         <meta property="og:title" content="About Centripetal Media | African Film & Television Production Studio" />
         <meta property="og:description" content="Leading African film production company creating authentic stories from Zambia to the world." />
-        <meta property="og:image" content="https://centripetalmedia.digital/director-lawrence-thompson-mab9szby.png" />
+        <meta property="og:image" content="https://centripetalmedia.digital/Centripetal_logo.jpeg" />
         <meta property="og:url" content="https://centripetalmedia.digital/about" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:title" content="About Centripetal Media | African Film Production Studio" />
         <meta name="twitter:description" content="Leading African film production company creating authentic stories from Zambia to the world." />
-        <meta name="twitter:image" content="https://centripetalmedia.digital/director-lawrence-thompson-mab9szby.png" />
+        <meta name="twitter:image" content="https://centripetalmedia.digital/Centripetal_logo.jpeg" />
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://centripetalmedia.digital/about" />
@@ -35,7 +35,7 @@ export default function About() {
               "name": "Centripetal Media",
               "description": "African film and television production studio creating authentic stories from Zambia to the world",
               "url": "https://centripetalmedia.digital",
-              "logo": "https://centripetalmedia.digital/logo-cent-md8qd7zz.png",
+              "logo": "https://centripetalmedia.digital/Centripetal_logo.jpeg",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "ZM",
@@ -57,139 +57,217 @@ export default function About() {
       
       <Layout>
         <div className="pt-20">
-          {/* Clean Hero Section - No Background Image */}
-          <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
+          {/* Hero Section */}
+          <section className="relative h-[70vh] min-h-[500px]">
+            <Image
+              src="/MG_9756.jpg"
+              alt="Centripetal Media"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 flex items-center">
+              <div className="container mx-auto px-4 md:px-6">
+                <div className="max-w-3xl">
+                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-tight mb-6">
+                    ABOUT US
+                  </h1>
+                  <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed">
+                    The Circle of Vision
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          {/* Intro Section */}
+          <section className="py-24 bg-white">
             <div className="container mx-auto px-4 md:px-6">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-black tracking-tight leading-tight mb-8">
-                  ABOUT US
-                </h1>
-                <div className="w-24 h-px bg-black mx-auto mb-8"></div>
-                <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed max-w-3xl mx-auto">
-                  Dedicated to creating authentic, thought-provoking content
+                <p className="text-2xl md:text-3xl leading-relaxed text-gray-900 font-light mb-8">
+                  Bringing African stories to the world through powerful visual storytelling.
+                </p>
+                <p className="text-lg md:text-xl leading-relaxed text-gray-600 font-light">
+                  At Centripetal Media, we believe stories do more than entertain, they shape culture, challenge perspectives, and inspire change. Our vision is rooted in authentic African storytelling that reflects the richness, complexity, and beauty of the continent.
+                </p>
+                <p className="text-lg md:text-xl leading-relaxed text-gray-600 font-light mt-6">
+                  We create stories that move people.
                 </p>
               </div>
             </div>
           </section>
           
-          {/* Mission Section */}
-          <section className="py-24 bg-white">
+          {/* Who We Are Section */}
+          <section className="py-24 bg-gray-50">
             <div className="container mx-auto px-4 md:px-6">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-16">
-                  <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-black">OUR MISSION</h2>
-                  <div className="w-16 h-px bg-gray-300 mx-auto"></div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                  <Image
+                    src="/Picture_with_president.jpg"
+                    alt="Centripetal Media Team"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                
-                <div className="space-y-8 text-center">
-                  <p className="text-lg md:text-xl leading-relaxed text-gray-700 font-light">
-                    Centripetal Media was founded with a clear mission: to create compelling, authentic stories 
-                    that challenge perspectives and inspire audiences. We believe in the transformative power 
-                    of visual storytelling and its ability to connect people across cultural and social boundaries.
+                <div>
+                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-black">Who We Are</h2>
+                  <div className="space-y-6 text-gray-700 leading-relaxed">
+                    <p>
+                      Centripetal Media Zambia (CMZ) is a Zambian-based film and television production company dedicated to producing high-quality, impactful content for local and global audiences.
+                    </p>
+                    <p>
+                      From feature films and television dramas to documentaries and digital productions, we specialize in compelling narratives, striking visuals, and meaningful storytelling. Our work combines creative excellence with cultural authenticity, ensuring every production resonates deeply with its audience.
+                    </p>
+                    <p>
+                      Over the years, CMZ has built a reputation for delivering bold, socially relevant, and emotionally powerful stories that reflect African society while meeting international production standards.
+                    </p>
+                    <p>
+                      Our portfolio includes acclaimed productions such as <strong>Can You See Us</strong>, <strong>Makofi</strong>, and <strong>Turn of Fortune</strong>, as well as exciting upcoming projects including <strong>Lute</strong> and <strong>Fading Memories</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          {/* Vision & Mission Section */}
+          <section className="py-24 bg-black text-white">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
+                <div className="space-y-6">
+                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Vision</h2>
+                  <p className="text-lg leading-relaxed text-gray-300">
+                    To be Africa's leading professional media hub, producing inspirational and entertaining content that connects with audiences across the world.
                   </p>
-                  <p className="text-lg md:text-xl leading-relaxed text-gray-700 font-light">
-                    Our approach combines innovative filmmaking techniques with thoughtful narratives, 
-                    resulting in content that is both artistically significant and emotionally resonant.
-                  </p>
-                  <p className="text-lg md:text-xl leading-relaxed text-gray-700 font-light">
-                    We are committed to supporting diverse voices and perspectives, collaborating with 
-                    talented creators from various backgrounds to bring unique stories to the screen.
+                </div>
+                <div className="space-y-6">
+                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Mission</h2>
+                  <p className="text-lg leading-relaxed text-gray-300">
+                    To inspire and entertain audiences in Africa and beyond through organic storytelling that reflects the diverse African landscape, powered by exceptional creative talent and innovation.
                   </p>
                 </div>
               </div>
             </div>
           </section>
           
-          {/* Team Section */}
-          <section className="py-24 bg-gray-50">
+          {/* What We Do Section */}
+          <section className="py-24 bg-white">
             <div className="container mx-auto px-4 md:px-6">
-              <div className="text-center mb-20">
-                <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-black">OUR TEAM</h2>
-                <div className="w-16 h-px bg-gray-300 mx-auto"></div>
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-black">What We Do</h2>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
-                <div className="text-center">
-                  <div className="relative w-56 h-56 mx-auto rounded-full overflow-hidden mb-8 shadow-lg">
-                    <Image
-                      src="/director-lawrence-thompson-mab9szby.png"
-                      alt="Lawrence Thompson"
-                      fill
-                      className="object-cover"
-                    />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {[
+                  {
+                    title: "Film Production",
+                    description: "We develop and produce powerful films that entertain, provoke thought, and spark conversation. Our productions are built around authentic storytelling, emotional depth, and cinematic excellence."
+                  },
+                  {
+                    title: "Television Production",
+                    description: "From drama series to entertainment programming, we create television content designed to captivate audiences and build lasting cultural impact."
+                  },
+                  {
+                    title: "Documentaries",
+                    description: "We produce compelling documentaries focused on important social, cultural, and developmental issues. Our documentary work shines a light on stories that matter and drives meaningful dialogue."
+                  },
+                  {
+                    title: "International Fixing",
+                    description: "CMZ provides trusted local production support for international filmmakers, broadcasters, and media organizations working in Zambia and across the region. Our expertise spans logistics, location scouting, research, permits, and production coordination."
+                  },
+                  {
+                    title: "Concept Development",
+                    description: "Great productions begin with great ideas. We specialize in concept creation, story development, scriptwriting, and creative direction, helping transform ideas into powerful screen experiences."
+                  }
+                ].map((service, index) => (
+                  <div key={index} className="bg-gray-50 p-8 rounded-lg">
+                    <h3 className="text-xl font-bold mb-4 text-black">{service.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{service.description}</p>
                   </div>
-                  <h3 className="text-2xl font-light tracking-tight mb-2 text-black">LAWRENCE THOMPSON</h3>
-                  <p className="text-gray-500 mb-6 font-light tracking-wide">Founder & Creative Director</p>
-                  <p className="text-gray-600 leading-relaxed font-light">
-                    A visionary filmmaker with extensive experience in directing and producing, 
-                    Lawrence leads Centripetal Media with a passion for storytelling and a 
-                    commitment to excellence in African cinema.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="relative w-56 h-56 mx-auto rounded-full overflow-hidden mb-8 shadow-lg">
-                    <Image
-                      src="/designer-amanda-rose-mad2i4hm.jpg"
-                      alt="Amanda Rose"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h3 className="text-2xl font-light tracking-tight mb-2 text-black">AMANDA ROSE</h3>
-                  <p className="text-gray-500 mb-6 font-light tracking-wide">Interior Designer</p>
-                  <p className="text-gray-600 leading-relaxed font-light">
-                    With her keen eye for detail and creative vision, Amanda brings spaces to life 
-                    through innovative design solutions that perfectly balance aesthetics and functionality.
-                  </p>
-                </div>
+                ))}
               </div>
             </div>
           </section>
           
-          {/* Values Section */}
-          <section className="py-24 bg-white">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="max-w-5xl mx-auto">
-                <div className="text-center mb-20">
-                  <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-black">OUR VALUES</h2>
-                  <div className="w-16 h-px bg-gray-300 mx-auto"></div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                  {[
-                    {
-                      title: "AUTHENTICITY",
-                      description: "We believe in telling stories that are genuine and true to the human experience."
-                    },
-                    {
-                      title: "INNOVATION",
-                      description: "We constantly push creative boundaries to discover new ways of storytelling."
-                    },
-                    {
-                      title: "COLLABORATION",
-                      description: "We value diverse perspectives and foster an environment of creative partnership."
-                    },
-                    {
-                      title: "IMPACT",
-                      description: "We create content that resonates, challenges, and inspires meaningful change."
-                    }
-                  ].map((value, index) => (
-                    <div key={index} className="text-center p-8">
-                      <h3 className="text-xl font-light tracking-wider mb-6 text-black">{value.title}</h3>
-                      <p className="text-gray-600 leading-relaxed font-light">{value.description}</p>
-                    </div>
-                  ))}
-                </div>
+          {/* Kabanana Image Break */}
+          <section className="relative h-[50vh] min-h-[400px]">
+            <Image
+              src="/Kabanana_-_series.jpg"
+              alt="Kabanana Series"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center px-4">
+                <p className="text-2xl md:text-4xl text-white font-light italic">
+                  "Stories shape culture. We create stories that move it."
+                </p>
               </div>
             </div>
           </section>
-
-          {/* Connect Section */}
+          
+          {/* Why Centripetal Media Section */}
           <section className="py-24 bg-gray-50">
             <div className="container mx-auto px-4 md:px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-black">Why Centripetal Media</h2>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {[
+                  {
+                    title: "Award-Winning Storytelling",
+                    description: "We create stories that are impactful, memorable, and culturally relevant."
+                  },
+                  {
+                    title: "Authentic African Narratives",
+                    description: "Our work reflects real African experiences with honesty and depth."
+                  },
+                  {
+                    title: "International Production Standards",
+                    description: "We deliver world-class production quality from development to final delivery."
+                  },
+                  {
+                    title: "Strong Regional Network",
+                    description: "Our connections across key sectors enable seamless production support across Southern Africa."
+                  },
+                  {
+                    title: "Creative Excellence",
+                    description: "Our team combines talent, innovation, and experience to produce exceptional content."
+                  }
+                ].map((reason, index) => (
+                  <div key={index} className="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 className="text-lg font-bold mb-3 text-black">{reason.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{reason.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+          
+          {/* Closing Section */}
+          <section className="py-24 bg-black text-white">
+            <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">Our Commitment</h2>
+              <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-6">
+                At Centripetal Media, storytelling sits at the center of everything we do.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-6">
+                We are committed to pushing the boundaries of African film and television through authenticity, innovation, and creative excellence.
+              </p>
+              <p className="text-2xl md:text-3xl font-light text-white mt-12">
+                Stories shape culture. We create stories that move it.
+              </p>
+            </div>
+          </section>
+          
+          {/* Connect Section */}
+          <section className="py-24 bg-white">
+            <div className="container mx-auto px-4 md:px-6">
               <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-black">CONNECT</h2>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-black">Connect</h2>
                 <div className="w-16 h-px bg-gray-300 mx-auto mb-12"></div>
                 
                 <p className="text-lg text-gray-600 font-light mb-12 leading-relaxed">

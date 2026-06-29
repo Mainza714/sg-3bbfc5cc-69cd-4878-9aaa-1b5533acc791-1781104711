@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-center text-center">
           <div className="relative h-12 w-12 mb-4">
             <Image 
-              src="/c-ma9y38y6.png" 
+              src="/Centripetal_logo.jpeg" 
               alt="Centripetal Media" 
               fill
               className="object-contain"

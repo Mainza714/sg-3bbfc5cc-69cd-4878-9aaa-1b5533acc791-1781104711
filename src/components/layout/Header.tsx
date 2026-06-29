@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,7 +25,7 @@ export function Header() {
             <div className='absolute left-1/2 transform -translate-x-1/2'>
               <Link href='/' className='relative h-16 w-16 md:h-20 md:w-20 block'>
                 <Image 
-                  src='/c-ma9y38y6.png' 
+                  src='/Centripetal_logo.jpeg' 
                   alt='Centripetal Media' 
                   fill
                   className='object-contain'
