@@ -7,7 +7,7 @@ export default function CanTheySeeUsPage() {
   return (
     <>
       <Head>
-        <title>Can You See Us | Centripetal Media</title>
+        <title>Can You See Us? | Centripetal Media</title>
         <meta name="description" content="A powerful drama exploring themes of identity and belonging, streaming on Netflix." />
       </Head>
       
@@ -41,7 +41,7 @@ export default function CanTheySeeUsPage() {
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
-                  CAN YOU SEE US
+                  CAN YOU SEE US?
                 </h1>
                 <div className="flex items-center gap-6 text-white/80 mb-6">
                   <span className="text-lg">2022</span>
@@ -64,7 +64,7 @@ export default function CanTheySeeUsPage() {
                       A powerful and emotionally charged drama that explores themes of identity, belonging, and the search for truth in contemporary society. Through compelling storytelling and authentic performances, the film delves into the complexities of human relationships and the courage it takes to be truly seen.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      Set against a backdrop of social change, "Can You See Us" challenges audiences to confront their own perceptions while celebrating the resilience of the human spirit. This thought-provoking narrative weaves together multiple perspectives to create a tapestry of hope, struggle, and ultimate redemption.
+                      Set against a backdrop of social change, "Can You See Us?" challenges audiences to confront their own perceptions while celebrating the resilience of the human spirit. This thought-provoking narrative weaves together multiple perspectives to create a tapestry of hope, struggle, and ultimate redemption.
                     </p>
                   </div>
                   
