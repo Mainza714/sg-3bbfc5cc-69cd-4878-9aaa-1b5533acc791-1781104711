@@ -81,19 +81,20 @@ export default function CanYouSeeUs() {
                         <li><span className="text-white">Rating:</span> PG-13</li>
                       </ul>
                     </div>
+
+                    <div className="relative w-full aspect-square bg-black">
+                      <Image
+                        src="/CYSU_square05_now_streaming.png"
+                        alt="Can You See Us? - Scene from the film"
+                        fill
+                        className="object-contain rounded-lg"
+                      />
+                    </div>
                   </div>
 
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Synopsis</h2>
-                      <div className="relative w-full max-w-md mx-auto aspect-square mb-6 bg-black">
-                        <Image
-                          src="/CYSU_square05_now_streaming.png"
-                          alt="Can You See Us? - Scene from the film"
-                          fill
-                          className="object-contain rounded-lg"
-                        />
-                      </div>
                       <p className="text-gray-300 mb-4">
                         Inspired by the extraordinary real-life journey of celebrated Zambian musician and humanitarian John Chiti, Can You See Us? is a towering achievement in African cinema. This profoundly moving, masterfully crafted coming-of-age masterpiece fearlessly confronts deep-seated social stigmas, superstition, and discrimination surrounding albinism.
                       </p>
