@@ -44,7 +44,7 @@ export default function MakofiPage() {
                   MAKOFI
                 </h1>
                 <div className="flex items-center gap-6 text-white/80 mb-6">
-                  <span className="text-lg">2023</span>
+                  <span className="text-lg">2021</span>
                   <span className="text-lg">•</span>
                   <span className="text-lg">Television Series</span>
                   <span className="text-lg">•</span>
@@ -89,7 +89,7 @@ export default function MakofiPage() {
                     <div className="space-y-3">
                       <div className="flex justify-between">
                         <span className="text-gray-600">Premiere Year</span>
-                        <span className="font-medium">2023</span>
+                        <span className="font-medium">2021</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Network</span>
