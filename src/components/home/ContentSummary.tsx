@@ -6,7 +6,7 @@ export function ContentSummary() {
   const featuredContent = [
     {
       id: "can-they-see-us",
-      title: "Can They See Us",
+      title: "Can You See Us",
       image: "/CYSU_square01_now_streaming.png",
       network: "Netflix",
       year: "2022",
@@ -57,12 +57,12 @@ export function ContentSummary() {
           {featuredContent.map((item) => (
             <div key={item.id} className="group">
               <div className="space-y-4">
-                <div className="relative aspect-[16/9] overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="space-y-2">

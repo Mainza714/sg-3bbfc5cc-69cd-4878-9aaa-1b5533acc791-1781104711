@@ -23,12 +23,12 @@ export default function CanYouSeeUs() {
                 </Link>
               </div>
 
-              <div className="relative aspect-[16/9] mb-12">
+              <div className="relative w-full max-w-lg mx-auto aspect-square mb-12 bg-black">
                 <Image
                   src="/CYSU_square01_now_streaming.png"
                   alt="Can You See Us Movie Poster"
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-contain rounded-lg"
                   priority
                 />
               </div>

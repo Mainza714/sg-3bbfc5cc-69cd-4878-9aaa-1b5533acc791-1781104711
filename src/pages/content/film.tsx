@@ -7,7 +7,7 @@ export default function FilmContent() {
   const filmContent = [
     {
       id: "can-they-see-us",
-      title: "Can They See Us",
+      title: "Can You See Us",
       category: "Film",
       image: "/CYSU_square01_now_streaming.png",
       network: "Netflix",
@@ -34,18 +34,17 @@ export default function FilmContent() {
             </Link>
           </div>
           
-          <section className="relative h-[50vh] w-full overflow-hidden">
-            <div className="absolute inset-0 bg-black/60 z-10" />
-            <div className="relative h-full w-full">
+          <section className="relative w-full overflow-hidden bg-black">
+            <div className="relative aspect-video w-full">
               <Image
                 src="/Can_You_See_Us_16x9_now_streaming.png"
                 alt="Film"
                 fill
                 priority
-                className="object-cover"
+                className="object-contain"
               />
             </div>
-            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
+            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4 pointer-events-none">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white max-w-4xl tracking-tight leading-tight">
                 FILM
               </h1>
@@ -56,14 +55,14 @@ export default function FilmContent() {
             <div className="container mx-auto px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filmContent.map((item) => (
-                  <Link key={item.id} href={`/content/${item.id}`} className="group">
+                  <Link key={item.id} href={`/content/can-you-see-us`} className="group">
                     <div className="space-y-4">
-                      <div className="relative aspect-[16/9] overflow-hidden">
+                      <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
                         <Image
                           src={item.image}
                           alt={item.title}
                           fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          className="object-contain transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
                       <div className="space-y-2">
