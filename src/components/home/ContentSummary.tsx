@@ -38,7 +38,7 @@ export function ContentSummary() {
       network: "Lawrence Thompson Film",
       year: "2025",
       category: "IN DEVELOPMENT",
-      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Malumba Malumba, and Kondwani Zulu."
+      description: ""
     }
   ];
 
