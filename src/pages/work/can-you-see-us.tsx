@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/layout/Layout";
 import Image from "next/image";
 import Head from "next/head";
@@ -7,8 +6,8 @@ export default function CanYouSeeUs() {
   return (
     <>
       <Head>
-        <title>Can You See Us | Centripetal Media</title>
-        <meta name="description" content="Can You See Us - A compelling drama directed by Kenny Mumba, featuring outstanding performances from Kangwa Chileshe, Ruth Jule, and Thabo Kaamba." />
+        <title>Can You See Us? | Centripetal Media</title>
+        <meta name="description" content="Can You See Us? - A compelling drama directed by Kenny Mumba, featuring outstanding performances from Kangwa Chileshe, Ruth Jule, and Thabo Kaamba." />
       </Head>
       <Layout>
         <div className="bg-black text-white min-h-screen">
@@ -26,7 +25,7 @@ export default function CanYouSeeUs() {
               
               <div className="space-y-8">
                 <div>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Can They See Us</h1>
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Can You See Us?</h1>
                   <div className="inline-block bg-yellow-400 text-black px-4 py-1 text-sm font-semibold rounded">
                     DRAMA
                   </div>

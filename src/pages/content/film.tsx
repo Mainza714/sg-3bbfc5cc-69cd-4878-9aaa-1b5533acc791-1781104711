@@ -7,7 +7,7 @@ export default function FilmContent() {
   const filmContent = [
     {
       id: "can-they-see-us",
-      title: "Can You See Us",
+      title: "Can You See Us?",
       category: "Film",
       image: "/CYSU_square01_now_streaming.png",
       network: "Netflix",

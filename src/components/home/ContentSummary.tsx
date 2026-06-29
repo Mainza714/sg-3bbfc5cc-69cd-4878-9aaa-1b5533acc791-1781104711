@@ -6,7 +6,7 @@ export function ContentSummary() {
   const featuredContent = [
     {
       id: "can-they-see-us",
-      title: "Can You See Us",
+      title: "Can You See Us?",
       image: "/CYSU_square01_now_streaming.png",
       network: "Netflix",
       year: "2022",

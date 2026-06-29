@@ -1,4 +1,3 @@
-
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
@@ -54,7 +53,7 @@ export default function TeamMemberPage() {
           image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1600&auto=format&fit=crop"
         },
         {
-          title: "CAN YOU SEE US",
+          title: "CAN YOU SEE US?",
           description: "An intimate portrait of invisible communities fighting for recognition.",
           image: "https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?q=80&w=1600&auto=format&fit=crop"
         }
@@ -152,7 +151,7 @@ export default function TeamMemberPage() {
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1600&auto=format&fit=crop",
       projects: [
         {
-          title: "CAN YOU SEE US",
+          title: "CAN YOU SEE US?",
           description: "Lead editor for this award-winning documentary exploring human connection.",
           image: "https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?q=80&w=1600&auto=format&fit=crop"
         },

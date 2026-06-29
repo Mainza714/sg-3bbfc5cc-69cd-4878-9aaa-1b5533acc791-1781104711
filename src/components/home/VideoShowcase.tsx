@@ -25,7 +25,7 @@ export function VideoShowcase() {
     },
     {
       id: "video-2",
-      title: "CAN YOU SEE US",
+      title: "CAN YOU SEE US?",
       description: "Exploring the depths of human connection in African cinema",
       youtubeId: "0FOCFfDR-qA",
       artwork: "/can-you-see-us-slide-mad29y0i.png"
