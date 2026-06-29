@@ -9,7 +9,7 @@ export default function FadingMemoriesPage() {
       <Head>
         <title>Fading Memories | African Film in Development | Centripetal Media</title>
         <meta name="description" content="Fading Memories - A haunting African drama exploring memory and time by Centripetal Media. Where the past and present collide in unexpected ways through authentic African cinema." />
-        <meta name="keywords" content="Fading Memories film, African drama, memory film, Centripetal Media, Zambian cinema, independent film, African storytelling, Lawrence Thomson director" />
+        <meta name="keywords" content="Fading Memories film, African drama, memory film, Centripetal Media, Zambian cinema, independent film, African storytelling, Lawrence Thompson director" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="Fading Memories | African Film in Development | Centripetal Media" />
@@ -40,7 +40,7 @@ export default function FadingMemoriesPage() {
               },
               "director": {
                 "@type": "Person",
-                "name": "Lawrence Thomson"
+                "name": "Lawrence Thompson"
               },
               "genre": "Drama",
               "inLanguage": "en",
@@ -132,7 +132,7 @@ export default function FadingMemoriesPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Production House</span>
-                        <span className="font-medium">Lawrence Thomson Film</span>
+                        <span className="font-medium">Lawrence Thompson Film</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Genre</span>
@@ -158,7 +158,7 @@ export default function FadingMemoriesPage() {
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Creative Team</h3>
                     <div className="space-y-2 text-gray-700 text-sm">
-                      <p><span className="font-medium">Director:</span> Lawrence Thomson</p>
+                      <p><span className="font-medium">Director:</span> Lawrence Thompson</p>
                     </div>
                   </div>
                   

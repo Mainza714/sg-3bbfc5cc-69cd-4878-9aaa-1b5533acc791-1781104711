@@ -12,16 +12,16 @@ export default function InDevelopmentContent() {
       image: "/lute-film-md8t0hqc.jpg",
       network: "Lawrence Thompson Film",
       year: "2026",
-      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Malumba Malumba, and Kondwani Zulu. Produced by Andrew Thompson and written by Lawrence Thompson."
+      description: ""
     },
     {
       id: "fading-memories",
       title: "Fading Memories",
       category: "In Development",
       image: "/fading-memories-film-md8tb00x.jpg",
-      network: "Lawrence Thomson Film",
+      network: "Lawrence Thompson Film",
       year: "2027",
-      description: "A compelling drama featuring Naomi Sakala, Catherine Mulope, Leo Simukoko, and Kondwani Zulu. Directed by Lawrence Thomson."
+      description: ""
     }
   ];
 
