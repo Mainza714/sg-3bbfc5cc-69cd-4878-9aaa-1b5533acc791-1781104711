@@ -138,8 +138,6 @@ export default function LutePage() {
                       <p>Catherine Mulope</p>
                       <p>Zodwa Khumalo</p>
                       <p>Clementine Siwale</p>
-                      <p>Malumba Malumba</p>
-                      <p>Kondwani Zulu</p>
                     </div>
                   </div>
                   
