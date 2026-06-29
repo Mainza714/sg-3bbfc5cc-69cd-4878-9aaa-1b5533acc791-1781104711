@@ -69,6 +69,10 @@ export default function CanYouSeeUs() {
                         <li>Ruth Jule</li>
                         <li>Thabo Kaamba</li>
                         <li>Patricia Mwanza</li>
+                        <li>Constridah Luyando</li>
+                        <li>Catherine Mulope</li>
+                        <li>Zodwa Khumalo</li>
+                        <li>Clementine Siwale</li>
                       </ul>
                     </div>
 
