@@ -8,7 +8,7 @@ export default function TurnOfFortune() {
     <>
       <Head>
         <title>Turn of Fortune | Centripetal Media</title>
-        <meta name="description" content="Turn of Fortune - When destiny takes an unexpected path, exploring themes of fate, choice, and redemption." />
+        <meta name="description" content="Turn of Fortune - A gritty drama series exploring the harsh realities of life on the streets of Lusaka." />
       </Head>
       <Layout>
         <div className="bg-black text-white min-h-screen">
@@ -26,7 +26,7 @@ export default function TurnOfFortune() {
               <div className="relative aspect-[16/9] mb-12">
                 <Image
                   src="/turn-of-fortune-mad296qa.jpg"
-                  alt="Turn of Fortune Movie Poster"
+                  alt="Turn of Fortune"
                   fill
                   className="object-cover rounded-lg"
                   priority
@@ -50,35 +50,30 @@ export default function TurnOfFortune() {
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Director</h2>
-                      <p className="text-gray-300">Rebecca Phiri</p>
+                      <p className="text-gray-300">Lawrence Thompson</p>
                     </div>
 
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Writers</h2>
                       <ul className="text-gray-300">
-                        <li>James Banda</li>
-                        <li>Rebecca Phiri</li>
-                        <li>Thomas Mwale (screenplay)</li>
+                        <li>Lawrence Thompson</li>
+                        <li>David Smith</li>
                       </ul>
                     </div>
 
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Stars</h2>
                       <ul className="text-gray-300">
-                        <li>Daniel Lupupa</li>
-                        <li>Mercy Mutale</li>
-                        <li>Brian Mulonga</li>
-                        <li>Catherine Phiri</li>
+                        <li>Edward Mukudu</li>
+                        <li>Lee Sendford</li>
                       </ul>
                     </div>
 
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Technical Details</h2>
                       <ul className="text-gray-300 space-y-1">
-                        <li><span className="text-white">Runtime:</span> 115 minutes</li>
-                        <li><span className="text-white">Language:</span> English, Tonga</li>
-                        <li><span className="text-white">Release:</span> 2024</li>
-                        <li><span className="text-white">Rating:</span> R</li>
+                        <li><span className="text-white">Episodes:</span> 45</li>
+                        <li><span className="text-white">Release:</span> 2019</li>
                       </ul>
                     </div>
                   </div>
@@ -87,34 +82,16 @@ export default function TurnOfFortune() {
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Synopsis</h2>
                       <p className="text-gray-300 mb-4">
-                        When a small-time businessman stumbles upon a briefcase full of money, 
-                        his life takes a dramatic turn that sets off a chain of events involving 
-                        corrupt officials, dangerous criminals, and moral dilemmas that test the 
-                        very core of his character.
+                        Turn of Fortune is a gritty drama series that explores the harsh realities of life on the streets of Lusaka, where poverty, marginalization, and dangerous criminal influences shape the lives of the vulnerable.
                       </p>
-                      <p className="text-gray-300">
-                        Set in the bustling streets of Lusaka, "Turn of Fortune" is a gripping 
-                        thriller that explores how quickly circumstances can change and how far 
-                        someone will go to protect their family when destiny takes an unexpected path.
+                      <p className="text-gray-300 mb-4">
+                        At the heart of the story is Ziphe, also known as David, a young boy raised in a violent and abusive home. His life takes a devastating turn when, while trying to protect his mother from yet another brutal beating, he strikes his abusive father with a heavy object. Believing he has killed him, Ziphe is consumed by fear and guilt.
                       </p>
-                    </div>
-
-                    <div>
-                      <h2 className="text-xl font-semibold mb-2">Production Highlights</h2>
-                      <ul className="text-gray-300 space-y-1">
-                        <li>• Shot entirely in Zambia with local cast and crew</li>
-                        <li>• Features authentic locations across Lusaka and Livingstone</li>
-                        <li>• Original score by award-winning composer Abel Chungu</li>
-                        <li>• Breakthrough performance by Daniel Lupupa</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h2 className="text-xl font-semibold mb-2">Director's Vision</h2>
-                      <p className="text-gray-300">
-                        "I wanted to create a thriller that not only entertains but also reflects 
-                        the moral complexities of modern African society. The film asks: what would 
-                        you do when faced with an opportunity that could change everything?" - Rebecca Phiri
+                      <p className="text-gray-300 mb-4">
+                        Terrified and desperate, he flees home and hides aboard a railway wagon. When he wakes up, he finds himself in Lusaka, alone and far from everything he knows. Now living as a fugitive, Ziphe must navigate the unforgiving streets while carrying the heavy burden of what he believes to be an unforgivable act.
+                      </p>
+                      <p className="text-gray-300 italic">
+                        Breakthrough performance by Edward Mukudu.
                       </p>
                     </div>
                   </div>
