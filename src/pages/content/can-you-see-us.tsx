@@ -77,7 +77,7 @@ export default function CanYouSeeUs() {
                       <ul className="text-gray-300 space-y-1">
                         <li><span className="text-white">Runtime:</span> 98 minutes</li>
                         <li><span className="text-white">Language:</span> English, Nyanja</li>
-                        <li><span className="text-white">Release:</span> 2024</li>
+                        <li><span className="text-white">Release:</span> 2022</li>
                         <li><span className="text-white">Rating:</span> PG-13</li>
                       </ul>
                     </div>
