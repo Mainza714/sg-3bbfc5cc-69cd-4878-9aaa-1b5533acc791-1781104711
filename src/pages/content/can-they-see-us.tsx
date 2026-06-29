@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +7,7 @@ export default function CanTheySeeUsPage() {
   return (
     <>
       <Head>
-        <title>Mwabi: Can They See Us | Centripetal Media</title>
+        <title>Can They See Us | Centripetal Media</title>
         <meta name="description" content="A powerful drama exploring themes of identity and belonging, streaming on Netflix." />
       </Head>
       
@@ -27,8 +26,8 @@ export default function CanTheySeeUsPage() {
             <div className="absolute inset-0 bg-black/50 z-10" />
             <div className="relative h-full w-full">
               <Image
-                src="/can-you-see-us-slide-mad29y0i.png"
-                alt="Mwabi: Can They See Us"
+                src="/CYSU_square01_now_streaming.png"
+                alt="Can They See Us"
                 fill
                 priority
                 className="object-cover"
@@ -42,10 +41,10 @@ export default function CanTheySeeUsPage() {
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
-                  MWABI: CAN THEY SEE US
+                  CAN THEY SEE US
                 </h1>
                 <div className="flex items-center gap-6 text-white/80 mb-6">
-                  <span className="text-lg">2024</span>
+                  <span className="text-lg">2022</span>
                   <span className="text-lg">•</span>
                   <span className="text-lg">Film</span>
                   <span className="text-lg">•</span>
@@ -65,7 +64,7 @@ export default function CanTheySeeUsPage() {
                       A powerful and emotionally charged drama that explores themes of identity, belonging, and the search for truth in contemporary society. Through compelling storytelling and authentic performances, the film delves into the complexities of human relationships and the courage it takes to be truly seen.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      Set against a backdrop of social change, "Mwabi: Can They See Us" challenges audiences to confront their own perceptions while celebrating the resilience of the human spirit. This thought-provoking narrative weaves together multiple perspectives to create a tapestry of hope, struggle, and ultimate redemption.
+                      Set against a backdrop of social change, "Can They See Us" challenges audiences to confront their own perceptions while celebrating the resilience of the human spirit. This thought-provoking narrative weaves together multiple perspectives to create a tapestry of hope, struggle, and ultimate redemption.
                     </p>
                   </div>
                   
@@ -83,7 +82,7 @@ export default function CanTheySeeUsPage() {
                     <div className="space-y-3">
                       <div className="flex justify-between">
                         <span className="text-gray-600">Release Year</span>
-                        <span className="font-medium">2024</span>
+                        <span className="font-medium">2022</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Platform</span>

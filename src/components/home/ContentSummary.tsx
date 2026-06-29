@@ -6,10 +6,10 @@ export function ContentSummary() {
   const featuredContent = [
     {
       id: "can-they-see-us",
-      title: "Mwabi: Can They See Us",
-      image: "/can-you-see-us-slide-mad29y0i.png",
+      title: "Can They See Us",
+      image: "/CYSU_square01_now_streaming.png",
       network: "Netflix",
-      year: "2024",
+      year: "2022",
       category: "FILM",
       description: "A powerful drama exploring themes of identity and belonging."
     },

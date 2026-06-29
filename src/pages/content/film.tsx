@@ -7,11 +7,11 @@ export default function FilmContent() {
   const filmContent = [
     {
       id: "can-they-see-us",
-      title: "Mwabi: Can They See Us",
+      title: "Can They See Us",
       category: "Film",
-      image: "/can-you-see-us-slide-mad29y0i.png",
+      image: "/CYSU_square01_now_streaming.png",
       network: "Netflix",
-      year: "2024",
+      year: "2022",
       description: "A powerful drama exploring themes of identity and belonging."
     }
   ];
@@ -38,7 +38,7 @@ export default function FilmContent() {
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
               <Image
-                src="/can-you-see-us-slide-mad29y0i.png"
+                src="/Can_You_See_Us_16x9_now_streaming.png"
                 alt="Film"
                 fill
                 priority

@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/layout/Layout";
 import Image from "next/image";
 import Head from "next/head";
@@ -26,7 +25,7 @@ export default function CanYouSeeUs() {
 
               <div className="relative aspect-[16/9] mb-12">
                 <Image
-                  src="/can-you-see-us-slide-mad29y0i.png"
+                  src="/CYSU_square01_now_streaming.png"
                   alt="Can You See Us Movie Poster"
                   fill
                   className="object-cover rounded-lg"
