@@ -69,7 +69,7 @@ export default function LutePage() {
                 alt="Lute"
                 fill
                 priority
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div className="absolute inset-0 z-20 flex flex-col justify-center items-start px-4 md:px-8 lg:px-16">
