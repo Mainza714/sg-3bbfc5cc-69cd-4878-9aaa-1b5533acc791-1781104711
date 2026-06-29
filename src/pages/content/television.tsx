@@ -11,7 +11,7 @@ export default function TelevisionContent() {
       category: "Television",
       image: "/makofi-mad1xrli.png",
       network: "Zambezi Magic",
-      year: "2023",
+      year: "2021",
       description: "A compelling series that captivates audiences across Africa."
     },
     {
@@ -20,7 +20,7 @@ export default function TelevisionContent() {
       category: "Television",
       image: "/turn-of-fortune-mad296qa.jpg",
       network: "Zambezi Magic",
-      year: "2022",
+      year: "2019",
       description: "A drama series exploring life's unexpected twists and turns."
     }
   ];
