@@ -61,7 +61,7 @@ export default function LutePage() {
             </Link>
           </div>
           
-          <section className="relative h-[70vh] w-full overflow-hidden">
+          <section className="relative h-[90vh] w-full overflow-hidden">
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative h-full w-full">
               <Image
