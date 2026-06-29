@@ -98,11 +98,6 @@ export function VideoShowcase() {
                 </div>
               ))}
             </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white text-lg bg-black/70 px-6 py-3 rounded-full backdrop-blur-sm">
-                Discover our African film productions - Hover or click on a title to play
-              </p>
-            </div>
           </div>
         )}
 
