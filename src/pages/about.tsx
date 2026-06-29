@@ -58,14 +58,16 @@ export default function About() {
       <Layout>
         <div className="pt-20">
           {/* Hero Section */}
-          <section className="relative h-[70vh] min-h-[500px]">
-            <Image
-              src="/MG_9756.jpg"
-              alt="Centripetal Media"
-              fill
-              className="object-cover"
-              priority
-            />
+          <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/Centripetal_media_draft_two.mp4" type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-black/50"></div>
             <div className="absolute inset-0 flex items-center">
               <div className="container mx-auto px-4 md:px-6">
