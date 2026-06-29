@@ -115,7 +115,7 @@ export default function FadingMemoriesPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Production House</span>
-                        <span className="font-medium">Centripetal</span>
+                        <span className="font-medium">Centripetal Media</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Genre</span>
@@ -136,10 +136,13 @@ export default function FadingMemoriesPage() {
                   </div>
                   
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Artistic Statement</h3>
-                    <p className="text-gray-700 text-sm italic">
-                      "Memory is not a recording device, but a creative act. This film explores the poetry found in the spaces between what we remember and what actually was."
-                    </p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Featured Cast</h3>
+                    <div className="space-y-2 text-gray-700 text-sm">
+                      <p>Naomi Sakala</p>
+                      <p>Catherine Mulope</p>
+                      <p>Leo Simukoko</p>
+                      <p>Kondwani Zulu</p>
+                    </div>
                   </div>
                 </div>
               </div>
