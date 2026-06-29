@@ -144,6 +144,16 @@ export default function FadingMemoriesPage() {
                       <p>Kondwani Zulu</p>
                     </div>
                   </div>
+                  
+                  <div className="rounded-lg overflow-hidden">
+                    <Image
+                      src="/fading-memories-poster.jpg"
+                      alt="Fading Memories Poster"
+                      width={400}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
