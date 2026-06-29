@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -105,8 +104,8 @@ export default function MakofiPage() {
                         <span className="font-medium">English</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-gray-600">Status</span>
-                        <span className="font-medium">Ongoing</span>
+                        <span className="text-gray-600">Created By</span>
+                        <span className="font-medium">Lawrence Thompson</span>
                       </div>
                     </div>
                   </div>
