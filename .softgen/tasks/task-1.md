@@ -1,6 +1,6 @@
 ---
 title: Rewrite About Us Page
-status: in_progress
+status: done
 priority: high
 type: feature
 tags: [content, about, design]
@@ -12,12 +12,11 @@ position: 1
 Rewrite the entire About Us page using the provided content. Integrate photos creatively throughout the page. Update the logo (Centripetal_logo.jpeg) across the entire website.
 
 ## Checklist
-- [ ] Rewrite src/pages/about.tsx with new content
-- [ ] Integrate Kabanana_-_series.jpg, Picture_with_president.jpg, MG_9756.jpg creatively
-- [ ] Update logo in Header component
-- [ ] Update logo in Footer component
-- [ ] Update favicon if needed
-- [ ] Verify build passes
+- [x] Rewrite src/pages/about.tsx with new content
+- [x] Integrate Kabanana_-_series.jpg, Picture_with_president.jpg, MG_9756.jpg creatively
+- [x] Update logo in Header component
+- [x] Update logo in Footer component
+- [x] Verify build passes
 
 ## Acceptance
 - About page displays all new content with photos
