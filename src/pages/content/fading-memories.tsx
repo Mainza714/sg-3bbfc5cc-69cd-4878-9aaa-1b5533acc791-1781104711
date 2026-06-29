@@ -98,26 +98,9 @@ export default function FadingMemoriesPage() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div className="lg:col-span-2 space-y-8">
                   <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">The Enigma Unfolds</h2>
-                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                      Time moves in mysterious ways, and memory even more so. Fading Memories explores the delicate boundary between what we remember and what we choose to forget, between the stories we tell ourselves and the truths that lie beneath.
-                    </p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Synopsis</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      In this haunting narrative, the past refuses to remain buried, surfacing in unexpected moments and challenging everything the characters thought they knew about themselves. What emerges is a meditation on identity, loss, and the power of human resilience.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Artistic Approach</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      The film employs a unique visual language that mirrors the fragmented nature of memory itself. Through innovative cinematography and sound design, audiences will experience the disorienting beauty of recollection and the weight of forgotten moments.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Thematic Depth</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      At its core, Fading Memories questions the reliability of our own perceptions. It invites viewers to consider how the stories we construct about our lives shape our reality, and what happens when those narratives begin to unravel.
+                      In the twilight of her career, respected HR professional Prisca is diagnosed with early-onset Alzheimer's, sparking a family reckoning as her children grapple with the responsibility of caring for their once-invincible matriarch.
                     </p>
                   </div>
                 </div>
@@ -132,7 +115,7 @@ export default function FadingMemoriesPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Production House</span>
-                        <span className="font-medium">Lawrence Thompson Film</span>
+                        <span className="font-medium">Centripetal</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Genre</span>
@@ -146,19 +129,9 @@ export default function FadingMemoriesPage() {
                   </div>
                   
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Featured Cast</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Production Team</h3>
                     <div className="space-y-2 text-gray-700 text-sm">
-                      <p>Naomi Sakala</p>
-                      <p>Catherine Mulope</p>
-                      <p>Leo Simukoko</p>
-                      <p>Kondwani Zulu</p>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Creative Team</h3>
-                    <div className="space-y-2 text-gray-700 text-sm">
-                      <p><span className="font-medium">Director:</span> Lawrence Thompson</p>
+                      <p><span className="font-medium">Writer/Director:</span> Lawrence Thompson</p>
                     </div>
                   </div>
                   
