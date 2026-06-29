@@ -247,6 +247,25 @@ export default function About() {
             </div>
           </section>
           
+          {/* Client List Section */}
+          <section className="py-24 bg-white">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-black">Client List</h2>
+                <div className="w-16 h-px bg-gray-300 mx-auto"></div>
+              </div>
+              <div className="max-w-4xl mx-auto">
+                <Image
+                  src="/client-list.png"
+                  alt="Centripetal Media Client List"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </section>
+          
           {/* Closing Section */}
           <section className="py-24 bg-black text-white">
             <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
