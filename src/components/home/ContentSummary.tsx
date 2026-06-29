@@ -36,7 +36,7 @@ export function ContentSummary() {
       title: "Lute",
       image: "/lute-film-md8t0hqc.jpg",
       network: "Lawrence Thompson Film",
-      year: "2025",
+      year: "2026",
       category: "IN DEVELOPMENT",
       description: ""
     }

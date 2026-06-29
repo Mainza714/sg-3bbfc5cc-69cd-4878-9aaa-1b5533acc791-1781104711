@@ -88,9 +88,11 @@ export default function InDevelopmentContent() {
                           {item.title}
                         </h3>
                         <p className="text-gray-600 text-sm">{item.network}</p>
-                        <p className="text-gray-500 text-sm line-clamp-2">
-                          {item.description}
-                        </p>
+                        {item.description && (
+                          <p className="text-gray-500 text-sm line-clamp-2">
+                            {item.description}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </Link>

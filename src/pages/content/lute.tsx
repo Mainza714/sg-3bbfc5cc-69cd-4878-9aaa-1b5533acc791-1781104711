@@ -83,7 +83,7 @@ export default function LutePage() {
                   LUTE
                 </h1>
                 <div className="flex items-center gap-6 text-white/80 mb-6">
-                  <span className="text-lg">2025</span>
+                  <span className="text-lg">2026</span>
                   <span className="text-lg">•</span>
                   <span className="text-lg">Film</span>
                   <span className="text-lg">•</span>
@@ -128,7 +128,7 @@ export default function LutePage() {
                     <div className="space-y-3">
                       <div className="flex justify-between">
                         <span className="text-gray-600">Expected Release</span>
-                        <span className="font-medium">2025</span>
+                        <span className="font-medium">2026</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Production</span>
