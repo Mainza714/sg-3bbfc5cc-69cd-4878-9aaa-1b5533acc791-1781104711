@@ -7,8 +7,8 @@ export default function CanYouSeeUs() {
   return (
     <>
       <Head>
-        <title>Can You See Us | Centripetal Media</title>
-        <meta name="description" content="Can You See Us - Exploring the depths of human connection through powerful storytelling and exceptional performances." />
+        <title>Can You See Us? | Centripetal Media</title>
+        <meta name="description" content="Can You See Us? - Exploring the depths of human connection through powerful storytelling and exceptional performances." />
       </Head>
       <Layout>
         <div className="bg-black text-white min-h-screen">
@@ -26,7 +26,7 @@ export default function CanYouSeeUs() {
               <div className="relative w-full max-w-lg mx-auto aspect-square mb-12 bg-black">
                 <Image
                   src="/CYSU_square01_now_streaming.png"
-                  alt="Can You See Us Movie Poster"
+                  alt="Can You See Us? Movie Poster"
                   fill
                   className="object-contain rounded-lg"
                   priority
@@ -35,7 +35,7 @@ export default function CanYouSeeUs() {
               
               <div className="space-y-8">
                 <div>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Can You See Us</h1>
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Can You See Us?</h1>
                   <div className="flex gap-2 mb-4">
                     <div className="inline-block bg-red-600 text-white px-4 py-1 text-sm font-semibold rounded">
                       DRAMA
@@ -87,33 +87,23 @@ export default function CanYouSeeUs() {
                     <div>
                       <h2 className="text-xl font-semibold mb-2">Synopsis</h2>
                       <p className="text-gray-300 mb-4">
-                        "Can You See Us" is a poignant exploration of visibility and recognition in 
-                        contemporary society. The film follows three interconnected stories of 
-                        individuals struggling to be seen and heard in a world that often overlooks 
-                        their experiences and contributions.
+                        Inspired by the extraordinary real-life journey of celebrated Zambian musician and humanitarian John Chiti, Can You See Us? is a towering achievement in African cinema. This profoundly moving, masterfully crafted coming-of-age masterpiece fearlessly confronts deep-seated social stigmas, superstition, and discrimination surrounding albinism.
                       </p>
-                      <p className="text-gray-300">
-                        Through intimate character studies and powerful performances, the film 
-                        challenges audiences to examine their own perceptions and biases while 
-                        celebrating the resilience of the human spirit.
+                      <p className="text-gray-300 mb-4">
+                        The story follows Joseph, a young boy born with albinism whose arrival is met with immediate rejection by a father who views him as a curse. Left to navigate a world clouded by ignorance and isolation, Joseph's journey is anchored by the fierce, unwavering love of his mother, Chama. Despite facing relentless bullying from his peers, Joseph's destiny shifts beautifully when he forms an unexpected bond with a local outcast who introduces him to the guitar. Through the transcendent power of music, love, and an indomitable spirit, Joseph remarkably transforms his pain into purpose—discovering his true identity and ultimately reshaping the heart of his entire community. It is a triumphant, deeply emotional celebration of human resilience that leaves an indelible mark on the viewer.
                       </p>
                     </div>
 
                     <div>
-                      <h2 className="text-xl font-semibold mb-2">Critical Reception</h2>
-                      <ul className="text-gray-300 space-y-1">
-                        <li>• "A masterful debut that announces Kenny Mumba as a filmmaker to watch" - Film Quarterly</li>
-                        <li>• "Powerful performances anchor this thought-provoking drama" - African Cinema Review</li>
-                        <li>• "A film that stays with you long after the credits roll" - The Guardian</li>
+                      <h2 className="text-xl font-semibold mb-2">Awards Won & Major Milestones</h2>
+                      <p className="text-gray-300 mb-4">
+                        A brilliant triumph for Zambian storytelling, Can You See Us? captured the hearts of critics and audiences alike, accumulating massive acclaim and shattering industry glass ceilings:
+                      </p>
+                      <ul className="text-gray-300 space-y-2">
+                        <li>• <strong>Ngoma Awards (Zambia):</strong> Thabo Kaamba took home the coveted Best Actress in a Feature Film award for her absolutely breathtaking, tour-de-force performance cross-playing the role of the young boy, Joseph.</li>
+                        <li>• <strong>International Circuit Recognition:</strong> Director Kenny "Roc" Mumba was highly praised for his visionary direction, securing the prestigious Best Director Southern Africa title on the international circuit.</li>
+                        <li>• <strong>Sotambe Film Festival:</strong> The film stood out as the crown jewel of Zambia's premier film and arts festival, sweeping up critical praise and widespread festival acclaim during its monumental rollout.</li>
                       </ul>
-                    </div>
-
-                    <div>
-                      <h2 className="text-xl font-semibold mb-2">Themes</h2>
-                      <p className="text-gray-300">
-                        The film explores themes of identity, social justice, family dynamics, 
-                        and the power of storytelling to bridge cultural and generational divides.
-                      </p>
                     </div>
                   </div>
                 </div>
